@@ -44,14 +44,19 @@ New featured studies will be listed here first:
 | SOS | [**Sos: Score-based oversampling for tabular data**](https://dl.acm.org/doi/10.1145/3534678.3539454) | KDD 2022 | [GitHub](https://github.com/JayoungKim408/SOS) ![Star](https://img.shields.io/github/stars/JayoungKim408/SOS.svg?style=social&label=Star) |  |
 STaSy | [**STaSy: Score-based Tabular data Synthesis**](https://openreview.net/forum?id=1mNssCWt_v) | ICLR 2023 | [GitHub](https://github.com/JayoungKim408/STaSy) ![Star](https://img.shields.io/github/stars/JayoungKim408/STaSy.svg?style=social&label=Star) | |
 
+- [**Sos: Score-based oversampling for tabular data**](https://dl.acm.org/doi/10.1145/3534678.3539454), KDD 2022, ![Star](https://img.shields.io/github/stars/JayoungKim408/SOS.svg?style=social&label=Star)
+
 
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td>Row 1, Col 1</td>
-    <td>Row 1, Col 2</td>
+    <th style="border: none;">Code</th>
+    <th style="border: none;">Datasets</th>
   </tr>
   <tr>
-    <td>Row 2, Col 1</td>
-    <td>Row 2, Col 2</td>
+    <td style="border: none;">
+      <a href="https://github.com/yourrepo">GitHub</a>
+      <img src="https://img.shields.io/github/stars/yourrepo?style=social" alt="GitHub Stars">
+    </td>
+    <td style="border: none;"></td>
   </tr>
 </table>

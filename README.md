@@ -38,25 +38,23 @@ New featured studies will be listed here first:
 # Diffusion Model for Data Augmentation
 
 ## Single Table Synthesis
-
-|  Abbr.  |   Title  |   Year   |   Code   |   Datasets   |
-|:--------|:--------:|:--------:|:--------:|:--------:|
-| SOS | [**Sos: Score-based oversampling for tabular data**](https://dl.acm.org/doi/10.1145/3534678.3539454) | KDD 2022 | [GitHub](https://github.com/JayoungKim408/SOS) ![Star](https://img.shields.io/github/stars/JayoungKim408/SOS.svg?style=social&label=Star) |  |
-STaSy | [**STaSy: Score-based Tabular data Synthesis**](https://openreview.net/forum?id=1mNssCWt_v) | ICLR 2023 | [GitHub](https://github.com/JayoungKim408/STaSy) ![Star](https://img.shields.io/github/stars/JayoungKim408/STaSy.svg?style=social&label=Star) | |
-
-- [**Sos: Score-based oversampling for tabular data**](https://dl.acm.org/doi/10.1145/3534678.3539454), KDD 2022, ![Star](https://img.shields.io/github/stars/JayoungKim408/SOS.svg?style=social&label=Star)
-
-
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <th style="border: none;">Code</th>
-    <th style="border: none;">Datasets</th>
-  </tr>
-  <tr>
-    <td style="border: none;">
-      <a href="https://github.com/yourrepo">GitHub</a>
-      <img src="https://img.shields.io/github/stars/yourrepo?style=social" alt="GitHub Stars">
-    </td>
-    <td style="border: none;"></td>
-  </tr>
-</table>
+- Sos: Score-based oversampling for tabular data, KDD 2022, [[Paper](https://arxiv.org/abs/2206.08555)], [[Codes](https://github.com/jayoungkim408/sos)]
+- STaSy: Score-based Tabular data Synthesis, ICLR 2023, [[Paper](https://arxiv.org/abs/2210.04018)], [[Codes](https://github.com/JayoungKim408/STaSy)]
+- Tabddpm: Modelling tabular data with diffusion models, ICML 2023, [[Paper](https://arxiv.org/abs/2209.15421)], [[Codes](https://github.com/yandex-research/tab-ddpm)]
+- Codi: Co-evolving contrastive diffusion models for mixed-type tabular synthesis, ICML 2023, [[Paper](https://arxiv.org/abs/2304.12654)], [[Codes](https://github.com/chaejeonglee/codi)]
+- MissDiff: Training Diffusion Models on Tabular Data with Missing Values, ICML Workshop 2023, [[Paper](https://arxiv.org/abs/2307.00467)]
+- AutoDiff: combining Auto-encoder and Diffusion model for tabular data synthesizing, NeurIPS Workshop 2023, [[Paper](https://arxiv.org/abs/2310.15479)], [[Codes](https://github.com/ucla-trustworthy-ai-lab/autodiffusion)]
+- Synthetic health-related longitudinal data with mixed-type variables generated using diffusion models, NeurIPS Workshop 2023, [[Paper](https://arxiv.org/abs/2303.12281)]
+- Findiff: Diffusion models for financial tabular data generation, ICAIF 2023, [[Paper](https://arxiv.org/abs/2309.01472)], [[Codes](https://github.com/sattarov/FinDiff)]
+- MedDiff: Generating electronic health records using accelerated denoising diffusion model, ArXiv 2023, [[Paper](https://arxiv.org/abs/2302.04355)]
+- Synthesizing mixed-type electronic health records using diffusion models, ArXiv 2023, [[Paper](https://arxiv.org/abs/2302.14679)]
+- Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space, ICLR 2024, [[Paper](https://arxiv.org/abs/2310.09656)], [[Codes](https://github.com/amazon-science/tabsyn)]
+- A Flexible Generative Model for Heterogeneous Tabular EHR with Missing Modality, ICLR 2024
+- EHRDiff: Exploring Realistic EHR Synthesis with Diffusion Models, TMLR 2024, [[Paper](https://arxiv.org/abs/2303.05656)], [[Codes](https://github.com/sczzz3/ehrdiff)]
+- Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees, AISTATS 2024, [[Paper](https://arxiv.org/abs/2309.09968)], [[Codes](https://github.com/atong01/conditional-flow-matching)]
+- TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation, NeurIPS Workshop 2024, [[Paper](https://arxiv.org/abs/2410.20626)]
+- Entity-based Financial Tabular Data Synthesis with Diffusion Models, ICAIF 2024, [[Paper](https://doi.org/10.1145/3677052.3698625)]
+- Imb-FinDiff: Conditional Diffusion Models for Class Imbalance Synthesis of Financial Tabular Data, ICAIF 2024, [[Paper](https://doi.org/10.1145/3677052.3698659)]
+- Guided discrete diffusion for electronic health record generation, ArXiv 2024, [[Paper](https://doi.org/10.1145/3677052.3698659)]
+- TabUnite: Efficient Encoding Schemes for Flow and Diffusion Tabular Generative Models, OpenReview 2024, [[Paper](https://arxiv.org/abs/2404.12314)]
+- Continuous Diffusion for Mixed-Type Tabular Data, OpenReview 2024

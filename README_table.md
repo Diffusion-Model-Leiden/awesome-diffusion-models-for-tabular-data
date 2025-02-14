@@ -58,6 +58,6 @@ Forest-Diffusion | [**Generating and imputing tabular data via diffusion and flo
 TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | NeurIPS Workshop 2024 |  | |
 EntTabDiff | [**Entity-based Financial Tabular Data Synthesis with Diffusion Models**](https://doi.org/10.1145/3677052.3698625) | ICAIF 2024 |  | |
 Imb-FinDiff | [**Imb-FinDiff: Conditional Diffusion Models for Class Imbalance Synthesis of Financial Tabular Data**](https://doi.org/10.1145/3677052.3698659) | ICAIF 2024 |  | |
-EHR-D3PM | [**Guided discrete diffusion for electronic health record generation**](https://doi.org/10.1145/3677052.3698659) | ArXiv 2024 |  | |
-TabUnite | [**TabUnite: Efficient Encoding Schemes for Flow and Diffusion Tabular Generative Models**](https://arxiv.org/abs/2404.12314) | OpenReview 2024 |  | |
-CDTD | **Continuous Diffusion for Mixed-Type Tabular Data** | OpenReview 2024 |  | |
+EHR-D3PM | [**Guided discrete diffusion for electronic health record generation**](https://arxiv.org/abs/2404.12314) | ArXiv 2024 |  | |
+TabUnite | **TabUnite: Efficient Encoding Schemes for Flow and Diffusion Tabular Generative Models** | OpenReview 2024 |  | |
+CDTD | [**Continuous Diffusion for Mixed-Type Tabular Data**](https://arxiv.org/abs/2312.10431) | OpenReview 2024 | [![Stars](https://img.shields.io/github/stars/amazon-science/tabsyn.svg?style=social&label=Star)](https://github.com/amazon-science/tabsyn) | |

@@ -55,6 +55,6 @@ New featured studies will be listed here first:
 - TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation, NeurIPS Workshop 2024, [[Paper](https://arxiv.org/abs/2410.20626)]
 - Entity-based Financial Tabular Data Synthesis with Diffusion Models, ICAIF 2024, [[Paper](https://doi.org/10.1145/3677052.3698625)]
 - Imb-FinDiff: Conditional Diffusion Models for Class Imbalance Synthesis of Financial Tabular Data, ICAIF 2024, [[Paper](https://doi.org/10.1145/3677052.3698659)]
-- Guided discrete diffusion for electronic health record generation, ArXiv 2024, [[Paper](https://doi.org/10.1145/3677052.3698659)]
-- TabUnite: Efficient Encoding Schemes for Flow and Diffusion Tabular Generative Models, OpenReview 2024, [[Paper](https://arxiv.org/abs/2404.12314)]
-- Continuous Diffusion for Mixed-Type Tabular Data, OpenReview 2024
+- Guided discrete diffusion for electronic health record generation, ArXiv 2024, [[Paper](https://arxiv.org/abs/2404.12314)]
+- TabUnite: Efficient Encoding Schemes for Flow and Diffusion Tabular Generative Models, OpenReview 2024
+- Continuous Diffusion for Mixed-Type Tabular Data, OpenReview 2024, [[Paper](https://arxiv.org/abs/2312.10431)], [[Codes](https://github.com/amazon-science/tabsyn)]

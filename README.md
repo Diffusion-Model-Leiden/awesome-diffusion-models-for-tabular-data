@@ -38,10 +38,15 @@ New featured studies will be listed here first.
 - [Trustworthy Data Synthesis](#trustworthy-data-synthesis)
 - [Anomaly Detection](#anomaly-detection)
 - [(In Depth) Handling Discrete Data in Diffusion Models](#in-depth-handling-discrete-data-in-diffusion-models)
+- [Datasets](#datasets)
 
 
 # Data Augmentation
-
+```markdown
+The topic of data augmentation can be divided into two sub-topics:
+  1. Single table synthesis: generation of an entire table or a specific part of a table (over sampling)
+  2. Multi-relational data synthesis: generation of multiple tables while considering their intercorrelations and constraints
+```
 ## Single Table Synthesis
 - Sos: Score-based oversampling for tabular data, KDD 2022, [[Paper](https://arxiv.org/abs/2206.08555)], [Official [Codes](https://github.com/jayoungkim408/sos)]
 - STaSy: Score-based Tabular data Synthesis, ICLR 2023, [[Paper](https://arxiv.org/abs/2210.04018)], [Official [Codes](https://github.com/JayoungKim408/STaSy)]
@@ -71,6 +76,9 @@ New featured studies will be listed here first.
 - Relational Data Generation with Graph Neural Networks and Latent Diffusion Models, NeurIPS Workshop 2024, [[Paper](https://openreview.net/forum?id=MNLR2NYN2Z#discussion)], [Official [Codes](https://github.com/ValterH/relational-graph-conditioned-diffusion)]
 
 # Data Imputation
+```markdown
+Data imputation involves generating plausible values to fill in missing entries in tabular data
+```
 - Diffusion models for missing value imputation in tabular data, NeurIPS Workshop 2022, [[Paper](https://arxiv.org/abs/2210.17128)], [Official [Codes](https://github.com/pfnet-research/CSDI_T)]
 - TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation, NeurIPS Workshop 2024, [[Paper](https://arxiv.org/abs/2410.20626)]
 - Self-supervision improves diffusion models for tabular data imputation, CIKM 2024, [[Paper](https://arxiv.org/abs/2407.18013)], [Official [Codes](https://github.com/yixinliu233/simpdm)]
@@ -82,12 +90,18 @@ New featured studies will be listed here first.
 - Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees, AISTATS 2024, [[Paper](https://arxiv.org/abs/2309.09968)], [Official [Codes](https://github.com/SamsungSAILMontreal/ForestDiffusion)]
   
 # Trustworthy Data Synthesis
+```markdown
+Trustworthy data synthesis aims to generate realistic surrogate values for sensitive entries while keeping the overall utility of the tabular data.
+```
 - SiloFuse: Cross-silo Synthetic Data Generation with Latent Tabular Diffusion Models, ICDE 2024, [[Paper](https://arxiv.org/abs/2404.03299)]
 - FedTabDiff: Federated Learning of Diffusion Probabilistic Models for Synthetic Mixed-Type Tabular Data Generation, ArXiv 2024, [[Paper](https://arxiv.org/abs/2401.06263)], [Official [Codes](https://github.com/sattarov/fedtabdiff)]
 - Balanced Mixed-Type Tabular Data Synthesis with Diffusion Models, ArXiv 2024, [[Paper](https://arxiv.org/abs/2404.08254)], [Official [Codes](https://github.com/comp-well-org/fair-tab-diffusion)]
 - Differentially Private Federated Learning of Diffusion Models for Synthetic Tabular Data Generation, ArXiv 2024, [[Paper](https://arxiv.org/abs/2412.16083)]
 
 # Anomaly Detection
+```markdown
+In anomaly detecion, diffusion models are used to learn the “normal” distribution of data from the known set and identify anomalies as deviations from this learned distribution in the unseen data.
+```
 - TabADM: Unsupervised Tabular Anomaly Detection with Diffusion Models, ArXiv 2023, [[Paper](https://arxiv.org/abs/2307.12336)]
 - On Diffusion Modeling for Anomaly Detection, ICLR 2024, [[Paper](https://arxiv.org/abs/2305.18593)], [Official [Codes](https://github.com/vicliv/DTE)]
 - Self-supervised enhanced denoising diffusion for anomaly detection, Inf. Sci. 2024, [[Paper](https://doi.org/10.1016/j.ins.2024.120612)], [Official [Codes under construction](https://github.com/lsmiao1209/DOD_codes)]
@@ -97,3 +111,5 @@ New featured studies will be listed here first.
 
 # (In Depth) Handling Discrete Data in Diffusion Models
 To be finished
+
+# Datasets

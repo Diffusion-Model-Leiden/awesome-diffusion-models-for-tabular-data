@@ -30,17 +30,22 @@ New featured studies will be listed here first.
 
 - [Awesome Diffusion Models For Tabular Data](#awesome-diffusion-models-for-tabular-data)
   - [Table of Contents](#table-of-contents)
-- [Diffusion Model for Data Augmentation](#diffusion-model-for-data-augmentation)
+- [Data Augmentation](#data-augmentation)
   - [Single Table Synthesis](#single-table-synthesis)
   - [Multi-relational Data Synthesis](#multi-relational-data-synthesis)
 - [Data Imputation](#data-imputation)
 - [Trustworthy Data Synthesis](#trustworthy-data-synthesis)
 - [Anomaly Detection](#anomaly-detection)
 - [(In Depth) Handling Discrete Data in Diffusion Models](#in-depth-handling-discrete-data-in-diffusion-models)
+- [Datasets](#datasets)
 
 
-# Diffusion Model for Data Augmentation
-
+# Data Augmentation
+```markdown
+The topic of data augmentation can be divided into two sub-topics:
+  1. Single table synthesis: generation of an entire table or a specific part of a table (over sampling)
+  2. Multi-relational data synthesis: generation of multiple tables while considering their intercorrelations and constraints
+```
 ## Single Table Synthesis
 |  Abbr.  |   Title  |   Venue & Year |   Code   |   Datasets   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
@@ -74,6 +79,9 @@ ClavaDDPM | [**ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Di
 GNN-TabSyn | [**Relational Data Generation with Graph Neural Networks and Latent Diffusion Models**](https://openreview.net/forum?id=MNLR2NYN2Z#discussion) | NeurIPS Workshop 2024 | [![Stars](https://img.shields.io/github/stars/ValterH/relational-graph-conditioned-diffusion.svg?style=social&label=Star)](https://github.com/ValterH/relational-graph-conditioned-diffusion) | |
 
 # Data Imputation
+```markdown
+Data imputation involves generating plausible values to fill in missing entries in tabular data
+```
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Datasets   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 TabCSDI | [**Diffusion models for missing value imputation in tabular data**](https://arxiv.org/abs/2210.17128) | NeurIPS Workshop 2022 | [![Stars](https://img.shields.io/github/stars/pfnet-research/CSDI_T.svg?style=social&label=Star)](https://github.com/pfnet-research/CSDI_T) | |
@@ -87,6 +95,9 @@ TabSyn | [**Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Late
 Forest-Diffusion | [**Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees**](https://arxiv.org/abs/2309.09968) | AISTATS 2024 | [![Stars](https://img.shields.io/github/stars/SamsungSAILMontreal/ForestDiffusion.svg?style=social&label=Star)](https://github.com/SamsungSAILMontreal/ForestDiffusion) | |
 
 # Trustworthy Data Synthesis
+```markdown
+Trustworthy data synthesis aims to generate realistic surrogate values for sensitive entries while keeping the overall utility of the tabular data.
+```
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Datasets   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 SiloFuse | [**SiloFuse: Cross-silo Synthetic Data Generation with Latent Tabular Diffusion Models**](https://arxiv.org/abs/2404.03299) | ICDE 2024 | N/A | |
@@ -95,6 +106,9 @@ FairTabDDPM | [**Balanced Mixed-Type Tabular Data Synthesis with Diffusion Model
 DP-Fed-FinDiff | [**Differentially Private Federated Learning of Diffusion Models for Synthetic Tabular Data Generation**](https://arxiv.org/abs/2412.16083) | ArXiv 2024 | N/A | |
 
 # Anomaly Detection
+```markdown
+In anomaly detecion, diffusion models are used to learn the “normal” distribution of data from the known set and identify anomalies as deviations from this learned distribution in the unseen data.
+```
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Datasets   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 TabADM | [**TabADM: Unsupervised Tabular Anomaly Detection with Diffusion Models**](https://arxiv.org/abs/2307.12336) | ArXiv 2023 | N/A | |
@@ -106,3 +120,5 @@ FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Mod
 
 # (In Depth) Handling Discrete Data in Diffusion Models
 To be finished
+
+# Datasets

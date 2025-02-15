@@ -26,15 +26,13 @@ New featured studies will be listed here first.
 
 ---
 # Timeline
-<!-- ![Timeline](materials/TaxonomyTabDM.svg) -->
 ![Timeline](materials/TabGenAI2.svg)
----
-## Table of Contents
+
+# Table of Contents
 
 - [Awesome Diffusion Models For Tabular Data](#awesome-diffusion-models-for-tabular-data)
 - [Timeline](#timeline)
-  - [](#)
-  - [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)
 - [Data Augmentation](#data-augmentation)
   - [Single Table Synthesis](#single-table-synthesis)
   - [Multi-relational Data Synthesis](#multi-relational-data-synthesis)

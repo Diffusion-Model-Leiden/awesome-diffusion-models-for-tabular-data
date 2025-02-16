@@ -40,6 +40,8 @@ New featured studies will be listed here first.
 - [Anomaly Detection](#anomaly-detection)
 - [(In Depth) Handling Discrete Data in Diffusion Models](#in-depth-handling-discrete-data-in-diffusion-models)
 - [Collection of Datasets](#collection-of-datasets)
+  - [Diffusion Model Usage Across Benchmarking Datasets](#diffusion-model-usage-across-benchmarking-datasets)
+  - [Benchmarking Datasets for Various Diffusion Models](#benchmarking-datasets-for-various-diffusion-models)
 
 # Timeline of GenAI for Tabular Data
 ![Timeline](materials/TabGenAI2.svg)
@@ -126,3 +128,189 @@ FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Mod
 To be finished
 
 # Collection of Datasets
+```markdown
+Various datasets have been used to evaluate the performance of diffusion models for tabular data.
+Most datasets come from the well-established UCI machine learning repository, OpenML collection, and Kaggle platform.
+```
+## Diffusion Model Usage Across Benchmarking Datasets
+| Dataset Name | Appeared in |
+|:--------|:--------:|
+Satimage | SOS |
+Shoppers | SOS, AutoDiff, TabSyn, TabDiff, TabUnite, DiffPuter |
+Surgical | SOS |
+Buddy | SOS, TabDDPM |
+Default | SOS, STaSy, TabDDPM, FinDiff, CDTD, TabSyn, TabDiff, TabUnite, DiffPuter, DP-Fed-FinDiff |
+Weatheraus | SOS |
+Credit | STaSy, DDPM-Perlin |
+Htru | STaSy, AutoDiff |
+Magic | STaSy, AutoDiff, TabSyn, TabDiff, TabUnite, DiffPuter |
+Phishing | STaSy, CoDi |
+Spambase | STaSy |
+Bean | STaSy, AutoDiff, Forest-Diffusion, DiffPuter |
+Contraceptive | STaSy |
+Crowsource | STaSy |
+Obesity | STaSy, CoDi, AutoDiff |
+Robot | STaSy |
+Shuttle | STaSy |
+Beijing | STaSy, CDTD, TabSyn, TabDiff, TabUnite, DiffPuter |
+News | STaSy, AutoDiff, CDTD, TabSyn, TabDiff, TabUnite, DiffPuter |
+Abalone | TabDDPM, AutoDiff, SimpDM, SiloFuse |
+Adult | TabDDPM, AutoDiff, CDTD, TabSyn, TabDiff, Imb-FinDiff, TabUnite, MTabGen, DiffPuter, SiloFuse, FairTabDDPM |
+California housing | TabDDPM, Forest-Diffusion, MTabGen |
+Cardio | TabDDPM, TabUnite, MTabGen, SiloFuse |
+Churn | TabDDPM, AutoDiff, CDTD, MTabGen, SiloFuse |
+Diabetes | TabDDPM, CDTD, TabDiff, TabCSDI, SimpDM, SiloFuse, FedTabDiff |
+Facebook comm. vol. | TabDDPM |
+Gesture | TabDDPM, DiffPuter |
+Higgs small | TabDDPM |
+House 16h | TabDDPM |
+Insurance | TabDDPM, CoDi, AutoDiff, MTabGen |
+King | TabDDPM |
+Miniboone | TabDDPM |
+Wilt | TabDDPM, AutoDiff |
+Bank | CoDi, CDTD, TabUnite, FairTabDDPM |
+Heart | CoDi |
+Seismic | CoDi |
+Stroke | CoDi, EHR-TabDDPM, TabUnite |
+Cmc | CoDi |
+Customer | CoDi |
+Faults | CoDi, AutoDiff, TabSyn, TabDiff |
+Car | CoDi, Forest-Diffusion, DDPM-Perlin |
+Clave | CoDi |
+Nursery | CoDi, AutoDiff, DDPM-Perlin |
+Absent | CoDi |
+Drug | CoDi |
+Census | MissDiff, TabCSDI |
+Mimic4ed | MissDiff |
+Bayesian network (artificial) | MissDiff |
+Indian liver patient | AutoDiff, EHR-TabDDPM |
+Titanic | AutoDiff |
+Artforhiv | DPM-EHR |
+Acutehypotension | DPM-EHR |
+Philadelphia city payments | FinDiff, FedTabDiff |
+Fund holding | FinDiff |
+Acsincome | CDTD |
+Covertype | CDTD |
+Lending | CDTD |
+Nmes | CDTD |
+Mimic-iii | MedDiff, EHR-TabDDPM, FlexGen-EHR, EHRDiff, EHR-D3PM |
+Patient treatment classification | MedDiff |
+Pima indians diabetes | EHR-TabDDPM |
+Eicu | FlexGen-EHR |
+Cinc2012 | EHRDiff |
+Ptb-ecg | EHRDiff |
+Airfoil | Forest-Diffusion, SimpDM |
+Blood | Forest-Diffusion, SimpDM, NewImp |
+Breast | Forest-Diffusion, TabCSDI, NewImp |
+Climate | Forest-Diffusion |
+Concrete compression | Forest-Diffusion, TabCSDI, SimpDM, NewImp |
+Concrete slump | Forest-Diffusion |
+Connectionist bench sonar | Forest-Diffusion |
+Connectionist bench vowel | Forest-Diffusion, NewImp |
+Ecoli | Forest-Diffusion |
+Glass | Forest-Diffusion |
+Ionosphere | Forest-Diffusion, NewImp |
+Iris | Forest-Diffusion, SimpDM |
+Libras | Forest-Diffusion, TabCSDI |
+Parkinsons | Forest-Diffusion, NewImp |
+Planning relax | Forest-Diffusion |
+Qsar biodegradation | Forest-Diffusion, NewImp |
+Seeds | Forest-Diffusion |
+Wine | Forest-Diffusion, TabCSDI, DDPM-Perlin |
+Wine quality red | Forest-Diffusion, SimpDM |
+Wine quality white | Forest-Diffusion, SimpDM, NewImp |
+Yacht | Forest-Diffusion, SimpDM |
+Yeast | Forest-Diffusion, SimpDM |
+Tic-tac-toe | Forest-Diffusion |
+Congressional voting | Forest-Diffusion |
+Brazil ec | EntTabDiff |
+13f filing | EntTabDiff |
+Yelp reviews | EntTabDiff |
+Accounting entries | Imb-FinDiff |
+Philadephia city payments | Imb-FinDiff, DP-Fed-FinDiff |
+Ieee-cis fraud detection | Imb-FinDiff, FraudDiffuse, FraudDDPM |
+Private datasets | EHR-D3PM |
+Census synthetic | TabUnite |
+European credit card default | FraudDiffuse |
+Credit card fraud detection | FraudDDPM |
+Online retail | FraudDDPM |
+E-commerce transaction | FraudDDPM |
+California multi | ClavaDDPM |
+Instacart 05 | ClavaDDPM |
+Berka | ClavaDDPM |
+Movie lens | ClavaDDPM |
+Ccs | ClavaDDPM |
+Airbnb | GNN-TabSyn |
+Biodegradability | GNN-TabSyn |
+Cora | GNN-TabSyn |
+Imdb | GNN-TabSyn |
+Rossmann | GNN-TabSyn |
+Walmart | GNN-TabSyn |
+Covid19 | TabCSDI |
+Housing | SimpDM |
+Energy | SimpDM |
+German | SimpDM |
+Phoneme | SimpDM |
+Power | SimpDM |
+Ecommerce | SimpDM |
+California | SimpDM, DiffPuter |
+Heloc | MTabGen, SiloFuse |
+Gas | MTabGen |
+House sales | MTabGen |
+Otto group | MTabGen |
+Forest | MTabGen |
+Bike | DDPM-Perlin |
+Cpu | DDPM-Perlin |
+Frog | DDPM-Perlin |
+Satellite | DDPM-Perlin |
+Letter | DDPM-Perlin, DiffPuter |
+Turkiye | DDPM-Perlin |
+Loan | SiloFuse |
+Cover | SiloFuse |
+Intrusion | SiloFuse |
+Compas | FairTabDDPM |
+Income | DP-Fed-FinDiff |
+Marketing data | DP-Fed-FinDiff |
+Adbench | TabADM, DTE, SDAD, NSCBAD |
+
+## Benchmarking Datasets for Various Diffusion Models
+| Model Abbreviation | Datasets Names |
+|:--------|:--------:|
+SOS | Satimage, Shoppers, Surgical, Buddy, Default, Weatheraus |
+AutoDiff | Shoppers, Htru, Magic, Bean, Obesity, News, Abalone, Adult, Churn, Insurance, Wilt, Faults, Nursery, Indian liver patient, Titanic |
+TabSyn | Shoppers, Default, Magic, Beijing, News, Adult, Faults |
+TabDiff | Shoppers, Default, Magic, Beijing, News, Adult, Diabetes, Faults |
+TabUnite | Shoppers, Default, Magic, Beijing, News, Adult, Cardio, Bank, Stroke, Census synthetic |
+DiffPuter | Shoppers, Default, Magic, Bean, Beijing, News, Adult, Gesture, California, Letter |
+TabDDPM | Buddy, Default, Abalone, Adult, California housing, Cardio, Churn, Diabetes, Facebook comm. vol., Gesture, Higgs small, House 16h, Insurance, King, Miniboone, Wilt |
+STaSy | Default, Credit, Htru, Magic, Phishing, Spambase, Bean, Contraceptive, Crowsource, Obesity, Robot, Shuttle, Beijing, News |
+FinDiff | Default, Philadelphia city payments, Fund holding |
+CDTD | Default, Beijing, News, Adult, Churn, Diabetes, Bank, Acsincome, Covertype, Lending, Nmes |
+DP-Fed-FinDiff | Default, Philadephia city payments, Income, Marketing data |
+DDPM-Perlin | Credit, Car, Nursery, Wine, Bike, Cpu, Frog, Satellite, Letter, Turkiye |
+CoDi | Phishing, Obesity, Insurance, Bank, Heart, Seismic, Stroke, Cmc, Customer, Faults, Car, Clave, Nursery, Absent, Drug |
+Forest-Diffusion | Bean, California housing, Car, Airfoil, Blood, Breast, Climate, Concrete compression, Concrete slump, Connectionist bench sonar, Connectionist bench vowel, Ecoli, Glass, Ionosphere, Iris, Libras, Parkinsons, Planning relax, Qsar biodegradation, Seeds, Wine, Wine quality red, Wine quality white, Yacht, Yeast, Tic-tac-toe, Congressional voting |
+SimpDM | Abalone, Diabetes, Airfoil, Blood, Concrete compression, Iris, Wine quality red, Wine quality white, Yacht, Yeast, Housing, Energy, German, Phoneme, Power, Ecommerce, California |
+SiloFuse | Abalone, Adult, Cardio, Churn, Diabetes, Heloc, Loan, Cover, Intrusion |
+Imb-FinDiff | Adult, Accounting entries, Philadephia city payments, Ieee-cis fraud detection |
+MTabGen | Adult, California housing, Cardio, Churn, Insurance, Heloc, Gas, House sales, Otto group, Forest |
+FairTabDDPM | Adult, Bank, Compas |
+TabCSDI | Diabetes, Census, Breast, Concrete compression, Libras, Wine, Covid19 |
+FedTabDiff | Diabetes, Philadelphia city payments |
+EHR-TabDDPM | Stroke, Indian liver patient, Mimic-iii, Pima indians diabetes |
+MissDiff | Census, Mimic4ed, Bayesian network (artificial) |
+DPM-EHR | Artforhiv, Acutehypotension |
+MedDiff | Mimic-iii, Patient treatment classification |
+FlexGen-EHR | Mimic-iii, Eicu |
+EHRDiff | Mimic-iii, Cinc2012, Ptb-ecg |
+EHR-D3PM | Mimic-iii, Private datasets |
+NewImp | Blood, Breast, Concrete compression, Connectionist bench vowel, Ionosphere, Parkinsons, Qsar biodegradation, Wine quality white |
+EntTabDiff | Brazil ec, 13f filing, Yelp reviews |
+FraudDiffuse | Ieee-cis fraud detection, European credit card default |
+FraudDDPM | Ieee-cis fraud detection, Credit card fraud detection, Online retail, E-commerce transaction |
+ClavaDDPM | California multi, Instacart 05, Berka, Movie lens, Ccs |
+GNN-TabSyn | Airbnb, Biodegradability, Cora, Imdb, Rossmann, Walmart |
+TabADM | Adbench |
+DTE | Adbench |
+SDAD | Adbench |
+NSCBAD | Adbench, 15 additional datasets from icl + elki + ex-ae + odds |

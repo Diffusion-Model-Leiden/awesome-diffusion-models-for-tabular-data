@@ -1,5 +1,7 @@
 # [Awesome Diffusion Models For Tabular Data](https://arxiv.org/)
 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data)
+
 We discuss the aspiring studies on diffusion models for tabular data. 
 
 You are very welcomed to read our paper and feel free to leave comments.
@@ -37,7 +39,9 @@ New featured studies will be listed here first.
 - [Trustworthy Data Synthesis](#trustworthy-data-synthesis)
 - [Anomaly Detection](#anomaly-detection)
 - [(In Depth) Handling Discrete Data in Diffusion Models](#in-depth-handling-discrete-data-in-diffusion-models)
-- [Datasets](#datasets)
+- [Collection of Datasets](#collection-of-datasets)
+  - [Diffusion Model Usage Across Benchmarking Datasets](#diffusion-model-usage-across-benchmarking-datasets)
+  - [Benchmarking Datasets for Various Diffusion Models](#benchmarking-datasets-for-various-diffusion-models)
 
 # Timeline of GenAI for Tabular Data
 ![Timeline](materials/TabGenAI2.svg)
@@ -49,68 +53,264 @@ The topic of data augmentation can be divided into two sub-topics:
   2. Multi-relational data synthesis: generation of multiple tables while considering their intercorrelations and constraints
 ```
 ## Single Table Synthesis
-- Sos: Score-based oversampling for tabular data, KDD 2022, [[Paper](https://arxiv.org/abs/2206.08555)], [Official [Codes](https://github.com/jayoungkim408/sos)]
-- STaSy: Score-based Tabular data Synthesis, ICLR 2023, [[Paper](https://arxiv.org/abs/2210.04018)], [Official [Codes](https://github.com/JayoungKim408/STaSy)]
-- Tabddpm: Modelling tabular data with diffusion models, ICML 2023, [[Paper](https://arxiv.org/abs/2209.15421)], [Official [Codes](https://github.com/yandex-research/tab-ddpm)]
-- Codi: Co-evolving contrastive diffusion models for mixed-type tabular synthesis, ICML 2023, [[Paper](https://arxiv.org/abs/2304.12654)], [Official [Codes](https://github.com/chaejeonglee/codi)]
-- MissDiff: Training Diffusion Models on Tabular Data with Missing Values, ICML Workshop 2023, [[Paper](https://arxiv.org/abs/2307.00467)]
-- AutoDiff: combining Auto-encoder and Diffusion model for tabular data synthesizing, NeurIPS Workshop 2023, [[Paper](https://arxiv.org/abs/2310.15479)], [Official [Codes](https://github.com/ucla-trustworthy-ai-lab/autodiffusion)]
-- Synthetic health-related longitudinal data with mixed-type variables generated using diffusion models, NeurIPS Workshop 2023, [[Paper](https://arxiv.org/abs/2303.12281)], [[Promise to release codes](https://healthgym.ai/)]
-- Findiff: Diffusion models for financial tabular data generation, ICAIF 2023, [[Paper](https://arxiv.org/abs/2309.01472)], [Official [Codes](https://github.com/sattarov/FinDiff)]
-- Continuous Diffusion for Mixed-Type Tabular Data, NeurIPS Workshop 2023, [[Paper](https://arxiv.org/abs/2312.10431)]
-- MedDiff: Generating electronic health records using accelerated denoising diffusion model, ArXiv 2023, [[Paper](https://arxiv.org/abs/2302.04355)]
-- Synthesizing mixed-type electronic health records using diffusion models, ArXiv 2023, [[Paper](https://arxiv.org/abs/2302.14679)]
-- Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space, ICLR 2024, [[Paper](https://arxiv.org/abs/2310.09656)], [Official [Codes](https://github.com/amazon-science/tabsyn)]
-- A Flexible Generative Model for Heterogeneous Tabular EHR with Missing Modality, ICLR 2024
-- EHRDiff: Exploring Realistic EHR Synthesis with Diffusion Models, TMLR 2024, [[Paper](https://arxiv.org/abs/2303.05656)], [Official [Codes](https://github.com/sczzz3/ehrdiff)]
-- Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees, AISTATS 2024, [[Paper](https://arxiv.org/abs/2309.09968)], [Official [Codes](https://github.com/SamsungSAILMontreal/ForestDiffusion)]
-- TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation, NeurIPS Workshop 2024, [[Paper](https://arxiv.org/abs/2410.20626)], [Official [Codes](https://github.com/MinkaiXu/TabDiff)]
-- Entity-based Financial Tabular Data Synthesis with Diffusion Models, ICAIF 2024, [[Paper](https://doi.org/10.1145/3677052.3698625)]
-- Imb-FinDiff: Conditional Diffusion Models for Class Imbalance Synthesis of Financial Tabular Data, ICAIF 2024, [[Paper](https://doi.org/10.1145/3677052.3698659)]
-- Guided discrete diffusion for electronic health record generation, ArXiv 2024, [[Paper](https://arxiv.org/abs/2404.12314)]
-- TabUnite: Efficient Encoding Schemes for Flow and Diffusion Tabular Generative Models, OpenReview 2024
-- FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for Improved Fraud Detection, ICAIF 2024, [[Paper](https://doi.org/10.1145/3677052.3698658)]
-- Synthetic Data Generation for Fraud Detection Using Diffusion Models, ISIJ 2024, [[Paper](https://doi.org/10.11610/isij.5534)]
+|  Abbr.  |   Title  |   Venue & Year |   Code   |   Domain   |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+SOS | [**Sos: Score-based oversampling for tabular data**](https://arxiv.org/abs/2206.08555) | KDD 2022 | [![Stars](https://img.shields.io/github/stars/jayoungkim408/sos.svg?style=social&label=Star)](https://github.com/jayoungkim408/sos) | Generic|
+STaSy | [**STaSy: Score-based Tabular data Synthesis**](https://arxiv.org/abs/2210.04018) | ICLR 2023 | [![Stars](https://img.shields.io/github/stars/JayoungKim408/STaSy.svg?style=social&label=Star)](https://github.com/JayoungKim408/STaSy) | Generic |
+TabDDPM | [**Tabddpm: Modelling tabular data with diffusion models**](https://arxiv.org/abs/2209.15421) | ICML 2023 | [![Stars](https://img.shields.io/github/stars/yandex-research/tab-ddpm.svg?style=social&label=Star)](https://github.com/yandex-research/tab-ddpm) | Generic |
+CoDi | [**Codi: Co-evolving contrastive diffusion models for mixed-type tabular synthesis**](https://arxiv.org/abs/2304.12654) | ICML 2023 | [![Stars](https://img.shields.io/github/stars/chaejeonglee/codi.svg?style=social&label=Star)](https://github.com/chaejeonglee/codi) | Generic |
+MissDiff | [**MissDiff: Training Diffusion Models on Tabular Data with Missing Values**](https://arxiv.org/abs/2307.00467) | ICML Workshop 2023 | N/A | Generic |
+AutoDiff | [**AutoDiff: combining Auto-encoder and Diffusion model for tabular data synthesizing**](https://arxiv.org/abs/2310.15479) | NeurIPS Workshop 2023 | [![Stars](https://img.shields.io/github/stars/ucla-trustworthy-ai-lab/autodiffusion.svg?style=social&label=Star)](https://github.com/ucla-trustworthy-ai-lab/autodiffusion) | Generic |
+DPM-EHR | [**Synthetic health-related longitudinal data with mixed-type variables generated using diffusion models**](https://arxiv.org/abs/2303.12281) | NeurIPS Workshop 2023 | [Promise to release](https://healthgym.ai/) | Healthcare |
+FinDiff | [**Findiff: Diffusion models for financial tabular data generation**](https://arxiv.org/abs/2309.01472) | ICAIF 2023 | [![Stars](https://img.shields.io/github/stars/sattarov/FinDiff.svg?style=social&label=Star)](https://github.com/sattarov/FinDiff) | Finance |
+CDTD | [**Continuous Diffusion for Mixed-Type Tabular Data**](https://arxiv.org/abs/2312.10431) | NeurIPS Workshop 2023 | N/A | Generic |
+MedDiff | [**MedDiff: Generating electronic health records using accelerated denoising diffusion model**](https://arxiv.org/abs/2302.04355) | ArXiv 2023 | N/A | Healthcare |
+EHR-TabDDPM | [**Synthesizing mixed-type electronic health records using diffusion models**](https://arxiv.org/abs/2302.14679) | ArXiv 2023 | N/A | Healthcare |
+TabSyn | [**Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space**](https://arxiv.org/abs/2310.09656) | ICLR 2024 | [![Stars](https://img.shields.io/github/stars/amazon-science/tabsyn.svg?style=social&label=Star)](https://github.com/amazon-science/tabsyn) | Generic |
+FlexGen-EHR | [**A Flexible Generative Model for Heterogeneous Tabular EHR with Missing Modality**](https://openreview.net/forum?id=W2tCmRrj7H) | ICLR 2024 | N/A | Healthcare |
+EHRDiff | [**EHRDiff: Exploring Realistic EHR Synthesis with Diffusion Models**](https://arxiv.org/abs/2303.05656) | TMLR 2024 | [![Stars](https://img.shields.io/github/stars/sczzz3/ehrdiff.svg?style=social&label=Star)](https://github.com/sczzz3/ehrdiff) | Healthcare |
+Forest-Diffusion | [**Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees**](https://arxiv.org/abs/2309.09968) | AISTATS 2024 | [![Stars](https://img.shields.io/github/stars/SamsungSAILMontreal/ForestDiffusion.svg?style=social&label=Star)](https://github.com/SamsungSAILMontreal/ForestDiffusion) | Generic |
+TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | NeurIPS Workshop 2024 | [![Stars](https://img.shields.io/github/stars/MinkaiXu/TabDiff.svg?style=social&label=Star)](https://github.com/MinkaiXu/TabDiff) | Generic |
+EntTabDiff | [**Entity-based Financial Tabular Data Synthesis with Diffusion Models**](https://doi.org/10.1145/3677052.3698625) | ICAIF 2024 | N/A | Finance |
+Imb-FinDiff | [**Imb-FinDiff: Conditional Diffusion Models for Class Imbalance Synthesis of Financial Tabular Data**](https://doi.org/10.1145/3677052.3698659) | ICAIF 2024 | N/A | Finance |
+EHR-D3PM | [**Guided discrete diffusion for electronic health record generation**](https://arxiv.org/abs/2404.12314) | ArXiv 2024 | N/A | Healthcare |
+TabUnite | [**TabUnite: Efficient Encoding Schemes for Flow and Diffusion Tabular Generative Models**](https://openreview.net/forum?id=Zoli4UAQVZ) | OpenReview 2024 | [![Stars](https://img.shields.io/github/stars/jacobyhsi/TabUnite.svg?style=social&label=Star)](https://github.com/jacobyhsi/TabUnite) | Generic |
+FraudDiffuse | [**FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for Improved Fraud Detection**](https://doi.org/10.1145/3677052.3698658) | ICAIF 2024 | N/A | Finance |
+FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Models**](https://doi.org/10.11610/isij.5534) | ISIJ 2024 | N/A | Finance |
 
 ## Multi-relational Data Synthesis
-- ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models, NeurIPS 2024, [[Paper](https://arxiv.org/abs/2405.17724)], [Official [Codes](https://github.com/weipang142857/clavaddpm)]
-- Relational Data Generation with Graph Neural Networks and Latent Diffusion Models, NeurIPS Workshop 2024, [[Paper](https://openreview.net/forum?id=MNLR2NYN2Z#discussion)], [Official [Codes](https://github.com/ValterH/relational-graph-conditioned-diffusion)]
+|  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+ClavaDDPM | [**ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models**](https://arxiv.org/abs/2405.17724) | NeurIPS 2024 | [![Stars](https://img.shields.io/github/stars/weipang142857/clavaddpm.svg?style=social&label=Star)](https://github.com/weipang142857/clavaddpm) | Generic |
+GNN-TabSyn | [**Relational Data Generation with Graph Neural Networks and Latent Diffusion Models**](https://openreview.net/forum?id=MNLR2NYN2Z#discussion) | NeurIPS Workshop 2024 | [![Stars](https://img.shields.io/github/stars/ValterH/relational-graph-conditioned-diffusion.svg?style=social&label=Star)](https://github.com/ValterH/relational-graph-conditioned-diffusion) | Generic |
 
 # Data Imputation
 ```markdown
 Data imputation involves generating plausible values to fill in missing entries in tabular data
 ```
-- Diffusion models for missing value imputation in tabular data, NeurIPS Workshop 2022, [[Paper](https://arxiv.org/abs/2210.17128)], [Official [Codes](https://github.com/pfnet-research/CSDI_T)]
-- TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation, NeurIPS Workshop 2024, [[Paper](https://arxiv.org/abs/2410.20626)]
-- Self-supervision improves diffusion models for tabular data imputation, CIKM 2024, [[Paper](https://arxiv.org/abs/2407.18013)], [Official [Codes](https://github.com/yixinliu233/simpdm)]
-- Diffusion models for tabular data imputation and synthetic data generation, ArXiv 2024, [[Paper](https://arxiv.org/abs/2407.02549)], [Promise to release codes upon acceptance]
-- Natural generative noise diffusion model imputation, KBS 2024, [[Paper](https://doi.org/10.1016/j.knosys.2024.112310)], [[Empty repostory](https://github.com/arizbw/perlin-diffusion-imputation)]
-- Rethinking the diffusion models for missing data imputation: A gradient flow perspective, NeurIPS 2024, [Official [Codes]((https://github.com/JustusvLiebig/NewImp))]
-- Unleashing the Potential of Diffusion Models for Incomplete Data Imputation, OpenReview 2024, [[Paper](https://arxiv.org/abs/2405.20690)], [Official [Codes](https://github.com/hengruizhang98/DiffPuter)]
-- Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space, ICLR 2024, [[Paper](https://arxiv.org/abs/2310.09656)], [Official [Codes](https://github.com/amazon-science/tabsyn)]
-- Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees, AISTATS 2024, [[Paper](https://arxiv.org/abs/2309.09968)], [Official [Codes](https://github.com/SamsungSAILMontreal/ForestDiffusion)]
-  
+|  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+TabCSDI | [**Diffusion models for missing value imputation in tabular data**](https://arxiv.org/abs/2210.17128) | NeurIPS Workshop 2022 | [![Stars](https://img.shields.io/github/stars/pfnet-research/CSDI_T.svg?style=social&label=Star)](https://github.com/pfnet-research/CSDI_T) | Generic |
+TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | NeurIPS Workshop 2024 |  [![Stars](https://img.shields.io/github/stars/MinkaiXu/TabDiff.svg?style=social&label=Star)](https://github.com/MinkaiXu/TabDiff)| Generic |
+SimpDM | [**Self-supervision improves diffusion models for tabular data imputation**](https://arxiv.org/abs/2407.18013) | CIKM 2024 | [![Stars](https://img.shields.io/github/stars/yixinliu233/simpdm.svg?style=social&label=Star)](https://github.com/yixinliu233/simpdm) | Generic |
+MTabGen | [**Diffusion models for tabular data imputation and synthetic data generation**](https://arxiv.org/abs/2407.02549) | ArXiv 2024 | Promise to release upon acceptance| Generic |
+DDPM-Perlin | [**Natural generative noise diffusion model imputation**](https://doi.org/10.1016/j.knosys.2024.112310) | KBS 2024 | [Empty repository](https://github.com/arizbw/perlin-diffusion-imputation) | Generic |
+NewImp | [**Rethinking the diffusion models for missing data imputation: A gradient flow perspective**](https://proceedings.neurips.cc/paper_files/paper/2024/hash/cb1ba6a42814bf83974ed45ffdb72efa-Abstract-Conference.html) | NeurIPS 2024 | [![Stars](https://img.shields.io/github/stars/JustusvLiebig/NewImp.svg?style=social&label=Star)](https://github.com/JustusvLiebig/NewImp) | Generic |
+DiffPuter | [**Unleashing the Potential of Diffusion Models for Incomplete Data Imputation**](https://arxiv.org/abs/2405.20690) | OpenReview 2024 | [![Stars](https://img.shields.io/github/stars/hengruizhang98/DiffPuter.svg?style=social&label=Star)](https://github.com/hengruizhang98/DiffPuter) | Generic |
+TabSyn | [**Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space**](https://arxiv.org/abs/2310.09656) | ICLR 2024 | [![Stars](https://img.shields.io/github/stars/amazon-science/tabsyn.svg?style=social&label=Star)](https://github.com/amazon-science/tabsyn) | Generic |
+Forest-Diffusion | [**Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees**](https://arxiv.org/abs/2309.09968) | AISTATS 2024 | [![Stars](https://img.shields.io/github/stars/SamsungSAILMontreal/ForestDiffusion.svg?style=social&label=Star)](https://github.com/SamsungSAILMontreal/ForestDiffusion) | Generic |
+
 # Trustworthy Data Synthesis
 ```markdown
 Trustworthy data synthesis aims to generate realistic surrogate values for sensitive entries while keeping the overall utility of the tabular data.
 ```
-- SiloFuse: Cross-silo Synthetic Data Generation with Latent Tabular Diffusion Models, ICDE 2024, [[Paper](https://arxiv.org/abs/2404.03299)]
-- FedTabDiff: Federated Learning of Diffusion Probabilistic Models for Synthetic Mixed-Type Tabular Data Generation, ArXiv 2024, [[Paper](https://arxiv.org/abs/2401.06263)], [Official [Codes](https://github.com/sattarov/fedtabdiff)]
-- Balanced Mixed-Type Tabular Data Synthesis with Diffusion Models, ArXiv 2024, [[Paper](https://arxiv.org/abs/2404.08254)], [Official [Codes](https://github.com/comp-well-org/fair-tab-diffusion)]
-- Differentially Private Federated Learning of Diffusion Models for Synthetic Tabular Data Generation, ArXiv 2024, [[Paper](https://arxiv.org/abs/2412.16083)]
+|  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+SiloFuse | [**SiloFuse: Cross-silo Synthetic Data Generation with Latent Tabular Diffusion Models**](https://arxiv.org/abs/2404.03299) | ICDE 2024 | N/A | Generic |
+FedTabDiff | [**FedTabDiff: Federated Learning of Diffusion Probabilistic Models for Synthetic Mixed-Type Tabular Data Generation**](https://arxiv.org/abs/2401.06263) | ArXiv 2024 | [![Stars](https://img.shields.io/github/stars/sattarov/fedtabdiff.svg?style=social&label=Star)](https://github.com/sattarov/fedtabdiff) | Generic |
+FairTabDDPM | [**Balanced Mixed-Type Tabular Data Synthesis with Diffusion Models**](https://arxiv.org/abs/2404.08254) | ArXiv 2024 | [![Stars](https://img.shields.io/github/stars/comp-well-org/fair-tab-diffusion.svg?style=social&label=Star)](https://github.com/comp-well-org/fair-tab-diffusion) | Generic |
+DP-Fed-FinDiff | [**Differentially Private Federated Learning of Diffusion Models for Synthetic Tabular Data Generation**](https://arxiv.org/abs/2412.16083) | ArXiv 2024 | N/A | Finance |
 
 # Anomaly Detection
 ```markdown
 In anomaly detecion, diffusion models are used to learn the “normal” distribution of data from the known set and identify anomalies as deviations from this learned distribution in the unseen data.
 ```
-- TabADM: Unsupervised Tabular Anomaly Detection with Diffusion Models, ArXiv 2023, [[Paper](https://arxiv.org/abs/2307.12336)]
-- On Diffusion Modeling for Anomaly Detection, ICLR 2024, [[Paper](https://arxiv.org/abs/2305.18593)], [Official [Codes](https://github.com/vicliv/DTE)]
-- Self-supervised enhanced denoising diffusion for anomaly detection, Inf. Sci. 2024, [[Paper](https://doi.org/10.1016/j.ins.2024.120612)], [Official [Codes under construction](https://github.com/lsmiao1209/DOD_codes)]
-- Anomaly Detection by Estimating Gradients of the Tabular Data Distribution, OpenReview 2024, [[Paper](https://openreview.net/forum?id=7QDIFrtAsB)], [Official [Codes in Supplementary Material](https://openreview.net/forum?id=7QDIFrtAsB)]
-- FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for Improved Fraud Detection, ICAIF 2024, [[Paper](https://doi.org/10.1145/3677052.3698658)]
-- Synthetic Data Generation for Fraud Detection Using Diffusion Models, ISIJ 2024, [[Paper](https://doi.org/10.11610/isij.5534)]
+|  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+TabADM | [**TabADM: Unsupervised Tabular Anomaly Detection with Diffusion Models**](https://arxiv.org/abs/2307.12336) | ArXiv 2023 | N/A | Generic |
+DTE | [**On Diffusion Modeling for Anomaly Detection**](https://arxiv.org/abs/2305.18593) | ICLR 2024 | [![Stars](https://img.shields.io/github/stars/vicliv/DTE.svg?style=social&label=Star)](https://github.com/vicliv/DTE) | Generic |
+SDAD | [**Self-supervised enhanced denoising diffusion for anomaly detection**](https://doi.org/10.1016/j.ins.2024.120612) | Inf. Sci. 2024 | [Under construction](https://github.com/lsmiao1209/DOD_codes) | Generic |
+NSCBAD | [**Anomaly Detection by Estimating Gradients of the Tabular Data Distribution**](https://openreview.net/forum?id=7QDIFrtAsB) | OpenReview 2024 | [Supplementary Material](https://openreview.net/forum?id=7QDIFrtAsB) | Generic |
+FraudDiffuse | [**FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for Improved Fraud Detection**](https://doi.org/10.1145/3677052.3698658) | ICAIF 2024 | N/A | Finance |
+FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Models**](https://doi.org/10.11610/isij.5534) | ISIJ 2024 | N/A | Finance |
 
 # (In Depth) Handling Discrete Data in Diffusion Models
 To be finished
 
-# Datasets
+# Collection of Datasets
+```markdown
+Various datasets have been used to evaluate the performance of diffusion models for tabular data.
+Most datasets come from the well-established UCI machine learning repository, OpenML collection, and Kaggle platform.
+```
+## Diffusion Model Usage Across Benchmarking Datasets
+| Dataset Name | Appeared in |
+|:--------|:--------:|
+Satimage | SOS |
+Shoppers | SOS, AutoDiff, TabSyn, TabDiff, TabUnite, DiffPuter |
+Surgical | SOS |
+Buddy | SOS, TabDDPM |
+Default | SOS, STaSy, TabDDPM, FinDiff, CDTD, TabSyn, TabDiff, TabUnite, DiffPuter, DP-Fed-FinDiff |
+Weatheraus | SOS |
+Credit | STaSy, DDPM-Perlin |
+Htru | STaSy, AutoDiff |
+Magic | STaSy, AutoDiff, TabSyn, TabDiff, TabUnite, DiffPuter |
+Phishing | STaSy, CoDi |
+Spambase | STaSy |
+Bean | STaSy, AutoDiff, Forest-Diffusion, DiffPuter |
+Contraceptive | STaSy |
+Crowsource | STaSy |
+Obesity | STaSy, CoDi, AutoDiff |
+Robot | STaSy |
+Shuttle | STaSy |
+Beijing | STaSy, CDTD, TabSyn, TabDiff, TabUnite, DiffPuter |
+News | STaSy, AutoDiff, CDTD, TabSyn, TabDiff, TabUnite, DiffPuter |
+Abalone | TabDDPM, AutoDiff, SimpDM, SiloFuse |
+Adult | TabDDPM, AutoDiff, CDTD, TabSyn, TabDiff, Imb-FinDiff, TabUnite, MTabGen, DiffPuter, SiloFuse, FairTabDDPM |
+California housing | TabDDPM, Forest-Diffusion, MTabGen |
+Cardio | TabDDPM, TabUnite, MTabGen, SiloFuse |
+Churn | TabDDPM, AutoDiff, CDTD, MTabGen, SiloFuse |
+Diabetes | TabDDPM, CDTD, TabDiff, TabCSDI, SimpDM, SiloFuse, FedTabDiff |
+Facebook comm. vol. | TabDDPM |
+Gesture | TabDDPM, DiffPuter |
+Higgs small | TabDDPM |
+House 16h | TabDDPM |
+Insurance | TabDDPM, CoDi, AutoDiff, MTabGen |
+King | TabDDPM |
+Miniboone | TabDDPM |
+Wilt | TabDDPM, AutoDiff |
+Bank | CoDi, CDTD, TabUnite, FairTabDDPM |
+Heart | CoDi |
+Seismic | CoDi |
+Stroke | CoDi, EHR-TabDDPM, TabUnite |
+Cmc | CoDi |
+Customer | CoDi |
+Faults | CoDi, AutoDiff, TabSyn, TabDiff |
+Car | CoDi, Forest-Diffusion, DDPM-Perlin |
+Clave | CoDi |
+Nursery | CoDi, AutoDiff, DDPM-Perlin |
+Absent | CoDi |
+Drug | CoDi |
+Census | MissDiff, TabCSDI |
+Mimic4ed | MissDiff |
+Bayesian network (artificial) | MissDiff |
+Indian liver patient | AutoDiff, EHR-TabDDPM |
+Titanic | AutoDiff |
+Artforhiv | DPM-EHR |
+Acutehypotension | DPM-EHR |
+Philadelphia city payments | FinDiff, FedTabDiff |
+Fund holding | FinDiff |
+Acsincome | CDTD |
+Covertype | CDTD |
+Lending | CDTD |
+Nmes | CDTD |
+Mimic-iii | MedDiff, EHR-TabDDPM, FlexGen-EHR, EHRDiff, EHR-D3PM |
+Patient treatment classification | MedDiff |
+Pima indians diabetes | EHR-TabDDPM |
+Eicu | FlexGen-EHR |
+Cinc2012 | EHRDiff |
+Ptb-ecg | EHRDiff |
+Airfoil | Forest-Diffusion, SimpDM |
+Blood | Forest-Diffusion, SimpDM, NewImp |
+Breast | Forest-Diffusion, TabCSDI, NewImp |
+Climate | Forest-Diffusion |
+Concrete compression | Forest-Diffusion, TabCSDI, SimpDM, NewImp |
+Concrete slump | Forest-Diffusion |
+Connectionist bench sonar | Forest-Diffusion |
+Connectionist bench vowel | Forest-Diffusion, NewImp |
+Ecoli | Forest-Diffusion |
+Glass | Forest-Diffusion |
+Ionosphere | Forest-Diffusion, NewImp |
+Iris | Forest-Diffusion, SimpDM |
+Libras | Forest-Diffusion, TabCSDI |
+Parkinsons | Forest-Diffusion, NewImp |
+Planning relax | Forest-Diffusion |
+Qsar biodegradation | Forest-Diffusion, NewImp |
+Seeds | Forest-Diffusion |
+Wine | Forest-Diffusion, TabCSDI, DDPM-Perlin |
+Wine quality red | Forest-Diffusion, SimpDM |
+Wine quality white | Forest-Diffusion, SimpDM, NewImp |
+Yacht | Forest-Diffusion, SimpDM |
+Yeast | Forest-Diffusion, SimpDM |
+Tic-tac-toe | Forest-Diffusion |
+Congressional voting | Forest-Diffusion |
+Brazil ec | EntTabDiff |
+13f filing | EntTabDiff |
+Yelp reviews | EntTabDiff |
+Accounting entries | Imb-FinDiff |
+Philadephia city payments | Imb-FinDiff, DP-Fed-FinDiff |
+Ieee-cis fraud detection | Imb-FinDiff, FraudDiffuse, FraudDDPM |
+Private datasets | EHR-D3PM |
+Census synthetic | TabUnite |
+European credit card default | FraudDiffuse |
+Credit card fraud detection | FraudDDPM |
+Online retail | FraudDDPM |
+E-commerce transaction | FraudDDPM |
+California multi | ClavaDDPM |
+Instacart 05 | ClavaDDPM |
+Berka | ClavaDDPM |
+Movie lens | ClavaDDPM |
+Ccs | ClavaDDPM |
+Airbnb | GNN-TabSyn |
+Biodegradability | GNN-TabSyn |
+Cora | GNN-TabSyn |
+Imdb | GNN-TabSyn |
+Rossmann | GNN-TabSyn |
+Walmart | GNN-TabSyn |
+Covid19 | TabCSDI |
+Housing | SimpDM |
+Energy | SimpDM |
+German | SimpDM |
+Phoneme | SimpDM |
+Power | SimpDM |
+Ecommerce | SimpDM |
+California | SimpDM, DiffPuter |
+Heloc | MTabGen, SiloFuse |
+Gas | MTabGen |
+House sales | MTabGen |
+Otto group | MTabGen |
+Forest | MTabGen |
+Bike | DDPM-Perlin |
+Cpu | DDPM-Perlin |
+Frog | DDPM-Perlin |
+Satellite | DDPM-Perlin |
+Letter | DDPM-Perlin, DiffPuter |
+Turkiye | DDPM-Perlin |
+Loan | SiloFuse |
+Cover | SiloFuse |
+Intrusion | SiloFuse |
+Compas | FairTabDDPM |
+Income | DP-Fed-FinDiff |
+Marketing data | DP-Fed-FinDiff |
+Adbench | TabADM, DTE, SDAD, NSCBAD |
+
+## Benchmarking Datasets for Various Diffusion Models
+| Model Abbreviation | Datasets Names |
+|:--------|:--------:|
+SOS | Satimage, Shoppers, Surgical, Buddy, Default, Weatheraus |
+AutoDiff | Shoppers, Htru, Magic, Bean, Obesity, News, Abalone, Adult, Churn, Insurance, Wilt, Faults, Nursery, Indian liver patient, Titanic |
+TabSyn | Shoppers, Default, Magic, Beijing, News, Adult, Faults |
+TabDiff | Shoppers, Default, Magic, Beijing, News, Adult, Diabetes, Faults |
+TabUnite | Shoppers, Default, Magic, Beijing, News, Adult, Cardio, Bank, Stroke, Census synthetic |
+DiffPuter | Shoppers, Default, Magic, Bean, Beijing, News, Adult, Gesture, California, Letter |
+TabDDPM | Buddy, Default, Abalone, Adult, California housing, Cardio, Churn, Diabetes, Facebook comm. vol., Gesture, Higgs small, House 16h, Insurance, King, Miniboone, Wilt |
+STaSy | Default, Credit, Htru, Magic, Phishing, Spambase, Bean, Contraceptive, Crowsource, Obesity, Robot, Shuttle, Beijing, News |
+FinDiff | Default, Philadelphia city payments, Fund holding |
+CDTD | Default, Beijing, News, Adult, Churn, Diabetes, Bank, Acsincome, Covertype, Lending, Nmes |
+DP-Fed-FinDiff | Default, Philadephia city payments, Income, Marketing data |
+DDPM-Perlin | Credit, Car, Nursery, Wine, Bike, Cpu, Frog, Satellite, Letter, Turkiye |
+CoDi | Phishing, Obesity, Insurance, Bank, Heart, Seismic, Stroke, Cmc, Customer, Faults, Car, Clave, Nursery, Absent, Drug |
+Forest-Diffusion | Bean, California housing, Car, Airfoil, Blood, Breast, Climate, Concrete compression, Concrete slump, Connectionist bench sonar, Connectionist bench vowel, Ecoli, Glass, Ionosphere, Iris, Libras, Parkinsons, Planning relax, Qsar biodegradation, Seeds, Wine, Wine quality red, Wine quality white, Yacht, Yeast, Tic-tac-toe, Congressional voting |
+SimpDM | Abalone, Diabetes, Airfoil, Blood, Concrete compression, Iris, Wine quality red, Wine quality white, Yacht, Yeast, Housing, Energy, German, Phoneme, Power, Ecommerce, California |
+SiloFuse | Abalone, Adult, Cardio, Churn, Diabetes, Heloc, Loan, Cover, Intrusion |
+Imb-FinDiff | Adult, Accounting entries, Philadephia city payments, Ieee-cis fraud detection |
+MTabGen | Adult, California housing, Cardio, Churn, Insurance, Heloc, Gas, House sales, Otto group, Forest |
+FairTabDDPM | Adult, Bank, Compas |
+TabCSDI | Diabetes, Census, Breast, Concrete compression, Libras, Wine, Covid19 |
+FedTabDiff | Diabetes, Philadelphia city payments |
+EHR-TabDDPM | Stroke, Indian liver patient, Mimic-iii, Pima indians diabetes |
+MissDiff | Census, Mimic4ed, Bayesian network (artificial) |
+DPM-EHR | Artforhiv, Acutehypotension |
+MedDiff | Mimic-iii, Patient treatment classification |
+FlexGen-EHR | Mimic-iii, Eicu |
+EHRDiff | Mimic-iii, Cinc2012, Ptb-ecg |
+EHR-D3PM | Mimic-iii, Private datasets |
+NewImp | Blood, Breast, Concrete compression, Connectionist bench vowel, Ionosphere, Parkinsons, Qsar biodegradation, Wine quality white |
+EntTabDiff | Brazil ec, 13f filing, Yelp reviews |
+FraudDiffuse | Ieee-cis fraud detection, European credit card default |
+FraudDDPM | Ieee-cis fraud detection, Credit card fraud detection, Online retail, E-commerce transaction |
+ClavaDDPM | California multi, Instacart 05, Berka, Movie lens, Ccs |
+GNN-TabSyn | Airbnb, Biodegradability, Cora, Imdb, Rossmann, Walmart |
+TabADM | Adbench |
+DTE | Adbench |
+SDAD | Adbench |
+NSCBAD | Adbench, 15 additional datasets from icl + elki + ex-ae + odds |

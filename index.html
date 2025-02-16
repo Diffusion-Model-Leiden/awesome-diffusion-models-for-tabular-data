@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Table</title>
+    
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    
+    <!-- jQuery + DataTables -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();  // Activate DataTables
+        });
+    </script>
+</head>
+<body>
+
+<h2>Sortable & Searchable Table</h2>
+
+<table id="myTable" class="display">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Alice</td><td>25</td><td>USA</td></tr>
+        <tr><td>Bob</td><td>30</td><td>UK</td></tr>
+        <tr><td>Charlie</td><td>22</td><td>Canada, USA</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -25,14 +25,11 @@ This repository is actively maintained and regularly updated. We highly apprecia
 New featured studies will be listed here first.
 
 ---
-# Timeline of GenAI for Tabular Data
-![Timeline](materials/TabGenAI2.svg)
-
 # Table of Contents
 
 - [Awesome Diffusion Models For Tabular Data](#awesome-diffusion-models-for-tabular-data)
-- [Timeline of GenAI for Tabular Data](#timeline-of-genai-for-tabular-data)
 - [Table of Contents](#table-of-contents)
+- [Timeline of GenAI for Tabular Data](#timeline-of-genai-for-tabular-data)
 - [Data Augmentation](#data-augmentation)
   - [Single Table Synthesis](#single-table-synthesis)
   - [Multi-relational Data Synthesis](#multi-relational-data-synthesis)
@@ -42,6 +39,8 @@ New featured studies will be listed here first.
 - [(In Depth) Handling Discrete Data in Diffusion Models](#in-depth-handling-discrete-data-in-diffusion-models)
 - [Datasets](#datasets)
 
+# Timeline of GenAI for Tabular Data
+![Timeline](materials/TabGenAI2.svg)
 
 # Data Augmentation
 ```markdown

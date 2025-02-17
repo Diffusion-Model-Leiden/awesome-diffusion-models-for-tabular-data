@@ -125,7 +125,15 @@ FraudDiffuse | [**FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for
 FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Models**](https://doi.org/10.11610/isij.5534) | ISIJ 2024 | N/A | Finance |
 
 # (In Depth) Handling Discrete Data in Diffusion Models
-To be finished
+```markdown
+Diffusion models are mostly designed to handle continous values, whereas in tabular data, discrete values and structures are commonly seen (e.g., country names, education level, or product category). 
+
+To have robust diffusion models for tabular data. 
+It is vital to develope techniques that intrinsically accomodates the discrete data.
+```
+Though discussed in our survey paper, we would like to forward the interesting readers to the repository built by 
+Kuleshov Group of Cornell University:
+- [Awesome Discrete Diffusion Models](https://github.com/kuleshov-group/awesome-discrete-diffusion-models)
 
 # Collection of Datasets
 ```markdown

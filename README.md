@@ -32,6 +32,7 @@ New featured studies will be listed here first.
 - [Awesome Diffusion Models For Tabular Data](#awesome-diffusion-models-for-tabular-data)
 - [Table of Contents](#table-of-contents)
 - [Timeline of GenAI for Tabular Data](#timeline-of-genai-for-tabular-data)
+- [Taxonomy of Diffusion Models for Tabular Data](#taxonomy-of-diffusion-models-for-tabular-data)
 - [Data Augmentation](#data-augmentation)
   - [Single Table Synthesis](#single-table-synthesis)
   - [Multi-relational Data Synthesis](#multi-relational-data-synthesis)
@@ -46,13 +47,24 @@ New featured studies will be listed here first.
 # Timeline of GenAI for Tabular Data
 ![Timeline](materials/TabGenAI2.svg)
 
+# Taxonomy of Diffusion Models for Tabular Data
+Research on generative models for tabular data are primarily motivated or driven by real-world applications. Identying by usages, we group the current studies into four main categories:
+- [**Data augmentation**](#data-augmentation): artificially generate **new tables or entries** from tables. 
+  - A typical technique appiled to battle against imbalanced class distribution in classification task, and to increase robustness or performance of the trained machine learning models.
+- [**Data imputation**](#data-imputation): fill in **missing or imcomplete entries** in existing tables.
+- [**Trustworthy data synthesis**](#trustworthy-data-synthesis): generate entirely new synthetic tables or entries while **maintaining privacy, fairness, and statistical properties**.
+  - This method enforces privacy-preserving through avoiding data exposure and leakage.
+  - The new samples shall enhance representativeness not amplify biases in existing data.
+- [**Anomaly Detection**](#anomaly-detection): identify **unusual, rare, or suspicious entries** that deviate significantly from patterns in the data.
+
 # Data Augmentation
 ```markdown
-The topic of data augmentation can be divided into two sub-topics:
-  1. Single table synthesis: generation of an entire table or a specific part of a table (over sampling)
-  2. Multi-relational data synthesis: generation of multiple tables while considering their intercorrelations and constraints
+The topic of data augmentation can be divided into two sub-topics: single table synthesis and multi-relational data synthesis.
 ```
 ## Single Table Synthesis
+```markdown
+Single table synthesis: generation of an entire table or a specific part of a table (over sampling)
+```
 |  Abbr.  |   Title  |   Venue & Year |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 SOS | [**Sos: Score-based oversampling for tabular data**](https://arxiv.org/abs/2206.08555) | KDD 2022 | [![Stars](https://img.shields.io/github/stars/jayoungkim408/sos.svg?style=social&label=Star)](https://github.com/jayoungkim408/sos) | Generic|
@@ -79,6 +91,9 @@ FraudDiffuse | [**FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for
 FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Models**](https://doi.org/10.11610/isij.5534) | ISIJ 2024 | N/A | Finance |
 
 ## Multi-relational Data Synthesis
+```markdown
+Multi-relational data synthesis: generation of multiple tables while considering their intercorrelations and constraints
+```
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 ClavaDDPM | [**ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models**](https://arxiv.org/abs/2405.17724) | NeurIPS 2024 | [![Stars](https://img.shields.io/github/stars/weipang142857/clavaddpm.svg?style=social&label=Star)](https://github.com/weipang142857/clavaddpm) | Generic |
@@ -126,10 +141,11 @@ FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Mod
 
 # (In Depth) Handling Discrete Data in Diffusion Models
 ```markdown
-Diffusion models are mostly designed to handle continous values, whereas in tabular data, discrete values and structures are commonly seen (e.g., country names, education level, or product category). 
+Diffusion models are primarily designed for continous values.
 
-To have robust diffusion models for tabular data. 
-It is vital to develope techniques that intrinsically accomodates the discrete data.
+Tabular data often contains discrete values and structured information (e.g., country names or product categories).
+
+To develop robust diffusion models for tabular data, it is crucial to design techniques that intrinsically accommodate discrete data.
 ```
 Though discussed in our survey paper, we would like to forward the interesting readers to the repository built by 
 Kuleshov Group of Cornell University:

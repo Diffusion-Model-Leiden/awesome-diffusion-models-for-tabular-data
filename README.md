@@ -50,12 +50,12 @@ New featured studies will be listed here first.
 # Taxonomy of Diffusion Models for Tabular Data
 Research on generative models for tabular data are primarily motivated or driven by real-world applications. Identying by usages, we group the current studies into four main categories:
 - [**Data augmentation**](#data-augmentation): artificially generate **new tables or entries** from tables. 
-  - A typical technique appiled to battle against imbalanced class distribution in classification task, and to increase robustness or performance of the trained machine learning models.
+  - A typical technique appiled to combat imbalanced class distribution in classification task, and to increase robustness or performance of trained machine learning models.
 - [**Data imputation**](#data-imputation): fill in **missing or imcomplete entries** in existing tables.
 - [**Trustworthy data synthesis**](#trustworthy-data-synthesis): generate entirely new synthetic tables or entries while **maintaining privacy, fairness, and statistical properties**.
   - This method enforces privacy-preserving through avoiding data exposure and leakage.
-  - The new samples shall enhance representativeness not amplify biases in existing data.
-- [**Anomaly Detection**](#anomaly-detection): identify **unusual, rare, or suspicious entries** that deviate significantly from patterns in the data.
+  - The new samples should enhance representativeness without amplifying biases in the existing data.
+- [**Anomaly Detection**](#anomaly-detection): identify **unusual, rare, or suspicious entries** that deviate significantly from normal patterns in the data.
 
 # Data Augmentation
 ```markdown

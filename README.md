@@ -48,7 +48,7 @@ New featured studies will be listed here first.
 ![Timeline](materials/TabGenAI2.svg)
 
 # Taxonomy of Diffusion Models for Tabular Data
-Research on generative models for tabular data are primarily motivated or driven by real-world applications. Identying by usages, we group the current studies into four main categories:
+Research on generative models for tabular data are primarily motivated or driven by real-world applications. Identifying by usages, we group the current studies into four main categories:
 - [**Data augmentation**](#data-augmentation): artificially generate **new tables or entries** from tables. 
   - A typical technique appiled to combat imbalanced class distribution in classification task, and to increase robustness or performance of trained machine learning models.
 - [**Data imputation**](#data-imputation): fill in **missing or imcomplete entries** in existing tables.

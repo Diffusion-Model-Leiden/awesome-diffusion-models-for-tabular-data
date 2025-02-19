@@ -58,13 +58,13 @@ Research on generative models for tabular data are primarily motivated or driven
 - [**Anomaly Detection**](#anomaly-detection): identify **unusual, rare, or suspicious entries** that deviate significantly from normal patterns in the data.
 
 # Data Augmentation
-```markdown
+
 The topic of data augmentation can be divided into two sub-topics: single table synthesis and multi-relational data synthesis.
-```
+
 ## Single Table Synthesis
-```markdown
+
 Single table synthesis: generation of an entire table or a specific part of a table (over sampling)
-```
+
 |  Abbr.  |   Title  |   Venue & Year |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 SOS | [**Sos: Score-based oversampling for tabular data**](https://arxiv.org/abs/2206.08555) | KDD 2022 | [![Stars](https://img.shields.io/github/stars/jayoungkim408/sos.svg?style=social&label=Star)](https://github.com/jayoungkim408/sos) | Generic|
@@ -91,18 +91,18 @@ FraudDiffuse | [**FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for
 FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Models**](https://doi.org/10.11610/isij.5534) | ISIJ 2024 | N/A | Finance |
 
 ## Multi-relational Data Synthesis
-```markdown
+
 Multi-relational data synthesis: generation of multiple tables while considering their intercorrelations and constraints
-```
+
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 ClavaDDPM | [**ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models**](https://arxiv.org/abs/2405.17724) | NeurIPS 2024 | [![Stars](https://img.shields.io/github/stars/weipang142857/clavaddpm.svg?style=social&label=Star)](https://github.com/weipang142857/clavaddpm) | Generic |
 GNN-TabSyn | [**Relational Data Generation with Graph Neural Networks and Latent Diffusion Models**](https://openreview.net/forum?id=MNLR2NYN2Z#discussion) | NeurIPS Workshop 2024 | [![Stars](https://img.shields.io/github/stars/ValterH/relational-graph-conditioned-diffusion.svg?style=social&label=Star)](https://github.com/ValterH/relational-graph-conditioned-diffusion) | Generic |
 
 # Data Imputation
-```markdown
+
 Data imputation involves generating plausible values to fill in missing entries in tabular data
-```
+
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 TabCSDI | [**Diffusion models for missing value imputation in tabular data**](https://arxiv.org/abs/2210.17128) | NeurIPS Workshop 2022 | [![Stars](https://img.shields.io/github/stars/pfnet-research/CSDI_T.svg?style=social&label=Star)](https://github.com/pfnet-research/CSDI_T) | Generic |
@@ -116,9 +116,9 @@ TabSyn | [**Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Late
 Forest-Diffusion | [**Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees**](https://arxiv.org/abs/2309.09968) | AISTATS 2024 | [![Stars](https://img.shields.io/github/stars/SamsungSAILMontreal/ForestDiffusion.svg?style=social&label=Star)](https://github.com/SamsungSAILMontreal/ForestDiffusion) | Generic |
 
 # Trustworthy Data Synthesis
-```markdown
+
 Trustworthy data synthesis aims to generate realistic surrogate values for sensitive entries while keeping the overall utility of the tabular data.
-```
+
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 SiloFuse | [**SiloFuse: Cross-silo Synthetic Data Generation with Latent Tabular Diffusion Models**](https://arxiv.org/abs/2404.03299) | ICDE 2024 | N/A | Generic |
@@ -127,9 +127,9 @@ FairTabDDPM | [**Balanced Mixed-Type Tabular Data Synthesis with Diffusion Model
 DP-Fed-FinDiff | [**Differentially Private Federated Learning of Diffusion Models for Synthetic Tabular Data Generation**](https://arxiv.org/abs/2412.16083) | ArXiv 2024 | N/A | Finance |
 
 # Anomaly Detection
-```markdown
+
 In anomaly detecion, diffusion models are used to learn the “normal” distribution of data from the known set and identify anomalies as deviations from this learned distribution in the unseen data.
-```
+
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 TabADM | [**TabADM: Unsupervised Tabular Anomaly Detection with Diffusion Models**](https://arxiv.org/abs/2307.12336) | ArXiv 2023 | N/A | Generic |
@@ -140,22 +140,22 @@ FraudDiffuse | [**FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for
 FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Models**](https://doi.org/10.11610/isij.5534) | ISIJ 2024 | N/A | Finance |
 
 # (In Depth) Handling Discrete Data in Diffusion Models
-```markdown
+
 Diffusion models are primarily designed for continous values.
 
 Tabular data often contains discrete values and structured information (e.g., country names or product categories).
 
 To develop robust diffusion models for tabular data, it is crucial to design techniques that intrinsically accommodate discrete data.
-```
+
 Though discussed in our survey paper, we would like to forward the interesting readers to the repository built by 
 Kuleshov Group of Cornell University:
 - [Awesome Discrete Diffusion Models](https://github.com/kuleshov-group/awesome-discrete-diffusion-models)
 
 # Collection of Datasets
-```markdown
+
 Various datasets have been used to evaluate the performance of diffusion models for tabular data.
 Most datasets come from the well-established UCI machine learning repository, OpenML collection, and Kaggle platform.
-```
+
 ## Diffusion Model Usage Across Benchmarking Datasets
 | Dataset Name | Appeared in |
 |:--------|:--------:|

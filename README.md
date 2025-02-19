@@ -253,7 +253,6 @@ Yelp reviews | EntTabDiff |
 Accounting entries | Imb-FinDiff |
 Philadephia city payments | Imb-FinDiff, DP-Fed-FinDiff |
 IEEE-CIS fraud detection | Imb-FinDiff, FraudDiffuse, FraudDDPM |
-<!-- Private datasets | EHR-D3PM | -->
 Census synthetic | TabUnite |
 European credit card default | FraudDiffuse |
 Credit card fraud detection | FraudDDPM |
@@ -277,7 +276,6 @@ German | SimpDM |
 Phoneme | SimpDM |
 Power | SimpDM |
 Ecommerce | SimpDM |
-<!-- California | SimpDM, DiffPuter | -->
 HELOC | MTabGen, SiloFuse |
 Gas | MTabGen |
 House Sales | MTabGen |
@@ -290,10 +288,8 @@ Satellite | DDPM-Perlin |
 Letter | DDPM-Perlin, DiffPuter |
 Turkiye | DDPM-Perlin |
 Loan | SiloFuse |
-<!-- Cover | SiloFuse | -->
 Intrusion | SiloFuse |
 COMPAS | FairTabDDPM |
-<!-- Income | DP-Fed-FinDiff | -->
 Marketing data | DP-Fed-FinDiff |
 Adbench | TabADM, DTE, SDAD, NSCBAD |
 

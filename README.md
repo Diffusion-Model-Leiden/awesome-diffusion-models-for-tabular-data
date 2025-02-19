@@ -4,11 +4,11 @@
 
 We discuss the aspiring studies on diffusion models for tabular data. 
 
-You are very welcomed to read our paper and feel free to leave comments.
+You are very welcome to read our paper and feel free to leave comments.
 
 [Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions (under review)](https://arxiv.org/)
 
-If you found the review paper and this repository helpful, please star this project and cite our survey paper:
+If you find the review paper and this repository helpful, please star this project and cite our survey paper:
 
 ```bibtex
 @misc{liDiffusion2025,

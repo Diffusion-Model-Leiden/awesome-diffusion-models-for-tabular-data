@@ -1,6 +1,6 @@
 # [Awesome Diffusion Models For Tabular Data](https://arxiv.org/)
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Visitors](https://visitor-badge.glitch.me/badge?page_id=diffusion-model-leiden.awesome-diffusion-models-for-tabular-data)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Visitors](https://api.visitorbadge.io/api/visitors?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data)
 
 We discuss the aspiring studies on diffusion models for tabular data. 
 

@@ -45,14 +45,21 @@ If you find our survey and this repository helpful, please **star this project**
 ![Timeline](materials/TabGenAI2.svg)
 
 # Taxonomy of Diffusion Models for Tabular Data
-Research on generative models for tabular data are primarily motivated or driven by real-world applications. Identifying by usages, we group the current studies into four main categories:
-- [**Data augmentation**](#data-augmentation): artificially generate **new tables or entries** from tables. 
-  - A typical technique appiled to combat imbalanced class distribution in classification task, and to increase robustness or performance of trained machine learning models.
-- [**Data imputation**](#data-imputation): fill in **missing or imcomplete entries** in existing tables.
-- [**Trustworthy data synthesis**](#trustworthy-data-synthesis): generate entirely new synthetic tables or entries while **maintaining privacy, fairness, and statistical properties**.
-  - This method enforces privacy-preserving through avoiding data exposure and leakage.
-  - The new samples should enhance representativeness without amplifying biases in the existing data.
-- [**Anomaly Detection**](#anomaly-detection): identify **unusual, rare, or suspicious entries** that deviate significantly from normal patterns in the data.
+
+Research on generative models for tabular data is primarily motivated by real-world applications. Based on their usage, we classify existing studies into four main categories:
+
+- [**Data Augmentation**](#data-augmentation): Artificially generate **new tables or entries** from existing datasets.  
+  - Commonly used to **address class imbalance** in classification tasks.  
+  - Enhances the **robustness and performance** of machine learning models.
+
+- [**Data Imputation**](#data-imputation): Fill in **missing or incomplete entries** within existing tables.
+
+- [**Trustworthy Data Synthesis**](#trustworthy-data-synthesis): Generate entirely new synthetic tables or entries while preserving **privacy, fairness, and statistical integrity**.  
+  - Ensures **privacy protection** by preventing data exposure and leakage.  
+  - Produces **representative** samples without amplifying biases in the original dataset.
+
+- [**Anomaly Detection**](#anomaly-detection): Identify **unusual, rare, or suspicious entries** that deviate significantly from normal patterns in the data.
+
 
 # Data Augmentation
 

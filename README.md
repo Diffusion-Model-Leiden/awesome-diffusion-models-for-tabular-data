@@ -2,29 +2,25 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Visitors](https://api.visitorbadge.io/api/visitors?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data)
 
-We discuss the aspiring studies on diffusion models for tabular data. 
+## Diffusion Models for Tabular Data
 
-You are very welcome to read our paper and feel free to leave comments.
+We explore recent advancements in **diffusion models for tabular data** and highlight key challenges, current progress, and future directions.
 
-[Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions (under review)](https://arxiv.org/)
+📖 **You are welcome to read our paper and share your feedback!**  
+👉 [Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions (under review)](https://arxiv.org/)
 
-If you find the review paper and this repository helpful, please star this project and cite our survey paper:
+### ⭐ Support & Citation  
+If you find our survey and this repository helpful, please **star this project** and cite our paper:
 
 ```bibtex
 @misc{liDiffusion2025,
-title = { Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions}
-author = {Li, Zhong, et al.}
-year = {2025},
-month = feb,
-number = {},
-primaryclass = {cs},
-doi = {}
+  title = {Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions},
+  author = {Zhong Li, Qi Huang*, Lincen Yang*, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen},
+  year = {2025},
+  month = {February},
+  primaryclass = {cs},
+  doi = {}
 }
-```
-
-This repository is actively maintained and regularly updated. We highly appreciate valuable recommendations on relevant and interesting research. 
-
-New featured studies will be listed here first.
 
 ---
 # Table of Contents

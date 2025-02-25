@@ -7,7 +7,7 @@
 We explore recent advancements in **diffusion models for tabular data** and highlight key challenges, current progress, and future directions.
 
 📖 **You are welcome to read our paper and share your feedback!**  
-👉 [Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions (under review)](https://arxiv.org/)
+👉 [Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions (under review)](https://arxiv.org/abs/2502.17119)
 
 ### ⭐ Support & Citation  
 If you find our survey and this repository helpful, please **star this project** and cite our paper:

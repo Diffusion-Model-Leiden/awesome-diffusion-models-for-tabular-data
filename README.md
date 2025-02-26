@@ -27,6 +27,8 @@ If you find our survey and this repository helpful, please **star this project**
 # Table of Contents
 
 - [Awesome Diffusion Models For Tabular Data](#awesome-diffusion-models-for-tabular-data)
+  - [Diffusion Models for Tabular Data](#diffusion-models-for-tabular-data)
+    - [⭐ Support \& Citation](#-support--citation)
 - [Table of Contents](#table-of-contents)
 - [Timeline of GenAI for Tabular Data](#timeline-of-genai-for-tabular-data)
 - [Taxonomy of Diffusion Models for Tabular Data](#taxonomy-of-diffusion-models-for-tabular-data)
@@ -79,14 +81,14 @@ MissDiff | [**MissDiff: Training Diffusion Models on Tabular Data with Missing V
 AutoDiff | [**AutoDiff: combining Auto-encoder and Diffusion model for tabular data synthesizing**](https://arxiv.org/abs/2310.15479) | NeurIPS Workshop 2023 | [![Stars](https://img.shields.io/github/stars/ucla-trustworthy-ai-lab/autodiffusion.svg?style=social&label=Star)](https://github.com/ucla-trustworthy-ai-lab/autodiffusion) | Generic |
 DPM-EHR | [**Synthetic health-related longitudinal data with mixed-type variables generated using diffusion models**](https://arxiv.org/abs/2303.12281) | NeurIPS Workshop 2023 | [Promise to release](https://healthgym.ai/) | Healthcare |
 FinDiff | [**Findiff: Diffusion models for financial tabular data generation**](https://arxiv.org/abs/2309.01472) | ICAIF 2023 | [![Stars](https://img.shields.io/github/stars/sattarov/FinDiff.svg?style=social&label=Star)](https://github.com/sattarov/FinDiff) | Finance |
-CDTD | [**Continuous Diffusion for Mixed-Type Tabular Data**](https://arxiv.org/abs/2312.10431) | NeurIPS Workshop 2023 | N/A | Generic |
+CDTD | [**Continuous Diffusion for Mixed-Type Tabular Data**](https://arxiv.org/abs/2312.10431v4) | ICLR 2025 | [![Stars](https://img.shields.io/github/stars/muellermarkus/cdtd.svg?style=social&label=Star)](https://github.com/muellermarkus/cdtd) | Generic |
 MedDiff | [**MedDiff: Generating electronic health records using accelerated denoising diffusion model**](https://arxiv.org/abs/2302.04355) | ArXiv 2023 | N/A | Healthcare |
 EHR-TabDDPM | [**Synthesizing mixed-type electronic health records using diffusion models**](https://arxiv.org/abs/2302.14679) | ArXiv 2023 | N/A | Healthcare |
 TabSyn | [**Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space**](https://arxiv.org/abs/2310.09656) | ICLR 2024 | [![Stars](https://img.shields.io/github/stars/amazon-science/tabsyn.svg?style=social&label=Star)](https://github.com/amazon-science/tabsyn) | Generic |
 FlexGen-EHR | [**A Flexible Generative Model for Heterogeneous Tabular EHR with Missing Modality**](https://openreview.net/forum?id=W2tCmRrj7H) | ICLR 2024 | N/A | Healthcare |
 EHRDiff | [**EHRDiff: Exploring Realistic EHR Synthesis with Diffusion Models**](https://arxiv.org/abs/2303.05656) | TMLR 2024 | [![Stars](https://img.shields.io/github/stars/sczzz3/ehrdiff.svg?style=social&label=Star)](https://github.com/sczzz3/ehrdiff) | Healthcare |
 Forest-Diffusion | [**Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees**](https://arxiv.org/abs/2309.09968) | AISTATS 2024 | [![Stars](https://img.shields.io/github/stars/SamsungSAILMontreal/ForestDiffusion.svg?style=social&label=Star)](https://github.com/SamsungSAILMontreal/ForestDiffusion) | Generic |
-TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | NeurIPS Workshop 2024 | [![Stars](https://img.shields.io/github/stars/MinkaiXu/TabDiff.svg?style=social&label=Star)](https://github.com/MinkaiXu/TabDiff) | Generic |
+TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | ICLR 2025 | [![Stars](https://img.shields.io/github/stars/MinkaiXu/TabDiff.svg?style=social&label=Star)](https://github.com/MinkaiXu/TabDiff) | Generic |
 EntTabDiff | [**Entity-based Financial Tabular Data Synthesis with Diffusion Models**](https://doi.org/10.1145/3677052.3698625) | ICAIF 2024 | N/A | Finance |
 Imb-FinDiff | [**Imb-FinDiff: Conditional Diffusion Models for Class Imbalance Synthesis of Financial Tabular Data**](https://doi.org/10.1145/3677052.3698659) | ICAIF 2024 | N/A | Finance |
 EHR-D3PM | [**Guided discrete diffusion for electronic health record generation**](https://arxiv.org/abs/2404.12314) | ArXiv 2024 | N/A | Healthcare |

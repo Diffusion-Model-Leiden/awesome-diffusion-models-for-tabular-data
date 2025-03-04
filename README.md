@@ -112,7 +112,7 @@ Data imputation involves generating plausible values to fill in missing entries 
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 TabCSDI | [**Diffusion models for missing value imputation in tabular data**](https://arxiv.org/abs/2210.17128) | NeurIPS Workshop 2022 | [![Stars](https://img.shields.io/github/stars/pfnet-research/CSDI_T.svg?style=social&label=Star)](https://github.com/pfnet-research/CSDI_T) | Generic |
-TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | NeurIPS Workshop 2024 |  [![Stars](https://img.shields.io/github/stars/MinkaiXu/TabDiff.svg?style=social&label=Star)](https://github.com/MinkaiXu/TabDiff)| Generic |
+TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | ICLR 2025 |  [![Stars](https://img.shields.io/github/stars/MinkaiXu/TabDiff.svg?style=social&label=Star)](https://github.com/MinkaiXu/TabDiff)| Generic |
 SimpDM | [**Self-supervision improves diffusion models for tabular data imputation**](https://arxiv.org/abs/2407.18013) | CIKM 2024 | [![Stars](https://img.shields.io/github/stars/yixinliu233/simpdm.svg?style=social&label=Star)](https://github.com/yixinliu233/simpdm) | Generic |
 MTabGen | [**Diffusion models for tabular data imputation and synthetic data generation**](https://arxiv.org/abs/2407.02549) | ArXiv 2024 | Promise to release upon acceptance| Generic |
 DDPM-Perlin | [**Natural generative noise diffusion model imputation**](https://doi.org/10.1016/j.knosys.2024.112310) | KBS 2024 | [Empty repository](https://github.com/arizbw/perlin-diffusion-imputation) | Generic |

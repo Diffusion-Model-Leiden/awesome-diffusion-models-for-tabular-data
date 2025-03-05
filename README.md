@@ -1,6 +1,6 @@
 # [Awesome Diffusion Models For Tabular Data](https://arxiv.org/)
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Visitors](https://api.visitorbadge.io/api/visitors?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Visitors](https://api.visitorbadge.io/api/visitors?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data) ![Contribute](https://img.shields.io/badge/Contribute-Welcome-brightgreen)
 
 ## Diffusion Models for Tabular Data
 
@@ -23,12 +23,25 @@ If you find our survey and this repository helpful, please **star this project**
 }
 ```
 
+### 🤝 Suggest Papers
+We appreciate any efforts to  To recommend papers, please ensure that:
+- Their topics are closely related to **diffusion models for tabular data**.
+- The papers focus on methodology.
+- No **duplicate** entries exist.
+- The papers are **high-quality and well-written**.
+- (Optional) papers with public available materials (codes, proofs, results, etc) are highly-appreciated.
+
+📝 To suggest a new paper, please open a **new issue** and use the [template](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data/blob/main/.github/ISSUE_TEMPLATE/paper-suggestion.md).
+
+💡 **Tip:** Check the [existing issues](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data/issues) to avoid duplicates before submitting.
+
 ---
 # Table of Contents
 
 - [Awesome Diffusion Models For Tabular Data](#awesome-diffusion-models-for-tabular-data)
   - [Diffusion Models for Tabular Data](#diffusion-models-for-tabular-data)
     - [⭐ Support \& Citation](#-support--citation)
+    - [🤝 Suggest Papers](#-suggest-papers)
 - [Table of Contents](#table-of-contents)
 - [Timeline of GenAI for Tabular Data](#timeline-of-genai-for-tabular-data)
 - [Taxonomy of Diffusion Models for Tabular Data](#taxonomy-of-diffusion-models-for-tabular-data)
@@ -112,7 +125,7 @@ Data imputation involves generating plausible values to fill in missing entries 
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 TabCSDI | [**Diffusion models for missing value imputation in tabular data**](https://arxiv.org/abs/2210.17128) | NeurIPS Workshop 2022 | [![Stars](https://img.shields.io/github/stars/pfnet-research/CSDI_T.svg?style=social&label=Star)](https://github.com/pfnet-research/CSDI_T) | Generic |
-TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | NeurIPS Workshop 2024 |  [![Stars](https://img.shields.io/github/stars/MinkaiXu/TabDiff.svg?style=social&label=Star)](https://github.com/MinkaiXu/TabDiff)| Generic |
+TabDiff | [**TabDiff: a Unified Diffusion Model for Multi-Modal Tabular Data Generation**](https://arxiv.org/abs/2410.20626) | ICLR 2025 |  [![Stars](https://img.shields.io/github/stars/MinkaiXu/TabDiff.svg?style=social&label=Star)](https://github.com/MinkaiXu/TabDiff)| Generic |
 SimpDM | [**Self-supervision improves diffusion models for tabular data imputation**](https://arxiv.org/abs/2407.18013) | CIKM 2024 | [![Stars](https://img.shields.io/github/stars/yixinliu233/simpdm.svg?style=social&label=Star)](https://github.com/yixinliu233/simpdm) | Generic |
 MTabGen | [**Diffusion models for tabular data imputation and synthetic data generation**](https://arxiv.org/abs/2407.02549) | ArXiv 2024 | Promise to release upon acceptance| Generic |
 DDPM-Perlin | [**Natural generative noise diffusion model imputation**](https://doi.org/10.1016/j.knosys.2024.112310) | KBS 2024 | [Empty repository](https://github.com/arizbw/perlin-diffusion-imputation) | Generic |

@@ -24,7 +24,7 @@ If you find our survey and this repository helpful, please **star this project**
 ```
 
 ### 🤝 Suggest Papers
-We appreciate any efforts to  To recommend papers, please ensure that:
+We appreciate any efforts to recommend papers, please ensure that:
 - Their topics are closely related to **diffusion models for tabular data**.
 - The papers focus on methodology.
 - No **duplicate** entries exist.

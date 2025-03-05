@@ -28,6 +28,7 @@ Thank you for your interest in contributing to this list! 🎉 <br>
 We welcome high-quality papers that add value to the community.
 
 To recommend papers, please ensure that:
+We appreciate any efforts to recommend papers, please ensure that:
 - Their topics are closely related to **diffusion models for tabular data**.
 - The papers focus on methodology.
 - No **duplicate** entries exist.

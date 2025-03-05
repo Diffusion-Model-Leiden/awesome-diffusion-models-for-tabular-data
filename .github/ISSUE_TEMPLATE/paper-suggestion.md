@@ -7,33 +7,26 @@ assignees: ''
 
 ---
 
-**Title**
+**Title**<br>
+TITLE of the paper.<br>
 
-TITLE of the paper.
-
-**Link to the paper**
-
+**Link to the paper**<br>
 LINK to the paper, preferably preprint archives or open-access proceedings and journals.
 
-**Does the paper fundamentally match at least one of the categorizations in our list?**
+**Does the paper fundamentally match at least one of the categorizations in our list?**<br>
+TOPICs of the paper. Does the paper fall into one of the categorizations, i.e., data augmentation (single table or multi-relational), imputation, trustworthy synthesis, and anomaly detection?<br>
+If so, please indicate which ones.<br>
+If not, please clearly specify its problem setups and application scenarios.<br>
 
-TOPICs of the paper. Does the paper fall into one of the categorizations, i.e., data augmentation (single table or multi-relational), imputation, trustworthy synthesis, and anomaly detection?
-If so, please indicate which ones.
-If not, please clearly specify its problem setups and application scenarios.
-
-**Venue of the Paper**
-
-Has the paper appeared in any conferences (including workshops) or journals?
+**Venue of the Paper**<br>
+Has the paper appeared in any conferences (including workshops) or journals?<br>
 If so, please specify; otherwise, leave this empty.
 
-**Code Availability**
-
+**Code Availability**<br>
 If the source codes are available, please kindly provide the link here.
 
-**Core Contributions (Optiional)**
-
+**Core Contributions (Optional)**<br>
 ABSTRACT of the paper. Instead of using the original abstract, you can summarize the core contributions of the paper in comparison to existing literature.
 
-**Comments & Notes (Optiional)**
-
+**Comments & Notes (Optional)**<br>
 If you have addtional comments or notes, please write them down here.

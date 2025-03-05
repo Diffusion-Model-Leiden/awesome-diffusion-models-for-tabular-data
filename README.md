@@ -24,12 +24,14 @@ If you find our survey and this repository helpful, please **star this project**
 ```
 
 ### 🤝 Suggest Papers
-We appreciate any efforts to  To recommend papers, please ensure that:
+Thank you for your interest in contributing to this list! 🎉 <br>
+We welcome high-quality papers that add value to the community.
+
+To recommend papers, please ensure that:
 - Their topics are closely related to **diffusion models for tabular data**.
 - The papers focus on methodology.
 - No **duplicate** entries exist.
 - The papers are **high-quality and well-written**.
-- (Optional) papers with public available materials (codes, proofs, results, etc) are highly-appreciated.
 
 📝 To suggest a new paper, please open a **new issue** and use the [template](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data/blob/main/.github/ISSUE_TEMPLATE/paper-suggestion.md).
 

@@ -115,6 +115,7 @@ Multi-relational data synthesis: generation of multiple tables while considering
 
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
+M2M | [**Synthetic Data Generation of Many-to-Many Datasets via Random Graph Generation**](https://openreview.net/forum?id=Q120_4COf-K) | ICLR 2023 | N/A | Generic |
 ClavaDDPM | [**ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Diffusion Models**](https://arxiv.org/abs/2405.17724) | NeurIPS 2024 | [![Stars](https://img.shields.io/github/stars/weipang142857/clavaddpm.svg?style=social&label=Star)](https://github.com/weipang142857/clavaddpm) | Generic |
 GNN-TabSyn | [**Relational Data Generation with Graph Neural Networks and Latent Diffusion Models**](https://openreview.net/forum?id=MNLR2NYN2Z#discussion) | NeurIPS Workshop 2024 | [![Stars](https://img.shields.io/github/stars/ValterH/relational-graph-conditioned-diffusion.svg?style=social&label=Star)](https://github.com/ValterH/relational-graph-conditioned-diffusion) | Generic |
 

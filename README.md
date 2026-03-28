@@ -47,6 +47,8 @@ We appreciate any efforts to recommend papers, please ensure that:
 - [Taxonomy of Diffusion Models for Tabular Data](#taxonomy-of-diffusion-models-for-tabular-data)
 - [Data Augmentation](#data-augmentation)
   - [Single Table Synthesis](#single-table-synthesis)
+
+- [TabGAN](https://github.com/Diyago/Tabular-data-generation) - Synthetic tabular data generation combining CTGAN, ForestDiffusion, and LLMs with adversarial filtering and privacy metrics. [Paper](https://arxiv.org/abs/2010.00638)
   - [Multi-relational Data Synthesis](#multi-relational-data-synthesis)
 - [Data Imputation](#data-imputation)
 - [Trustworthy Data Synthesis](#trustworthy-data-synthesis)

@@ -47,17 +47,27 @@ We appreciate any efforts to recommend papers, please ensure that:
 - [Taxonomy of Diffusion Models for Tabular Data](#taxonomy-of-diffusion-models-for-tabular-data)
 - [Data Augmentation](#data-augmentation)
   - [Single Table Synthesis](#single-table-synthesis)
+    - [Diffusion](#diffusion)
+    - [Flow Matching](#flow-matching)
   - [Multi-relational Data Synthesis](#multi-relational-data-synthesis)
+    - [Diffusion](#diffusion-1)
 - [Data Imputation](#data-imputation)
+    - [Diffusion](#diffusion-2)
 - [Trustworthy Data Synthesis](#trustworthy-data-synthesis)
+    - [Diffusion](#diffusion-3)
+- [Memorization Mitigation](#memorization-mitigation)
+    - [Diffusion](#diffusion-4)
 - [Anomaly Detection](#anomaly-detection)
+    - [Diffusion](#diffusion-5)
+    - [Flow Matching](#flow-matching-1)
 - [(In Depth) Handling Discrete Data in Diffusion Models](#in-depth-handling-discrete-data-in-diffusion-models)
 - [Collection of Datasets](#collection-of-datasets)
   - [Diffusion Model Usage Across Benchmarking Datasets](#diffusion-model-usage-across-benchmarking-datasets)
   - [Benchmarking Datasets for Various Diffusion Models](#benchmarking-datasets-for-various-diffusion-models)
 
 # Timeline of GenAI for Tabular Data
-![Timeline](materials/TabGenAI2.svg)
+<!-- ![Timeline](materials/TabGenAI2.svg) -->
+![Timeline](materials/TabGenTimelineTree2026.png)
 
 # Taxonomy of Diffusion Models for Tabular Data
 
@@ -73,6 +83,7 @@ Research on generative models for tabular data is primarily motivated by real-wo
   - Ensures **privacy protection** by preventing data exposure and leakage.  
   - Produces **representative** samples without amplifying biases in the original dataset.
 
+- [**Memorization Mitigation**](#memorization-mitigation): Detect and reduce copied, near-copied, or inferable training samples in synthetic tables to prevent privacy leakage while preserving useful statistical patterns.
 - [**Anomaly Detection**](#anomaly-detection): Identify **unusual, rare, or suspicious entries** that deviate significantly from normal patterns in the data.
 
 
@@ -83,6 +94,8 @@ The topic of data augmentation can be divided into two sub-topics: single table 
 ## Single Table Synthesis
 
 Single table synthesis: generation of an entire table or a specific part of a table (over sampling)
+
+### Diffusion
 
 |  Abbr.  |   Title  |   Venue & Year |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
@@ -108,9 +121,21 @@ EHR-D3PM | [**Guided discrete diffusion for electronic health record generation*
 TabUnite | [**TabUnite: Efficient Encoding Schemes for Flow and Diffusion Tabular Generative Models**](https://openreview.net/forum?id=Zoli4UAQVZ) | OpenReview 2024 | [![Stars](https://img.shields.io/github/stars/jacobyhsi/TabUnite.svg?style=social&label=Star)](https://github.com/jacobyhsi/TabUnite) | Generic |
 FraudDiffuse | [**FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for Improved Fraud Detection**](https://doi.org/10.1145/3677052.3698658) | ICAIF 2024 | N/A | Finance |
 FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Models**](https://doi.org/10.11610/isij.5534) | ISIJ 2024 | N/A | Finance |
+TabRep | [**TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation**](https://openreview.net/forum?id=yRbtFEh2OP) | TMLR 2026 | [![Stars](https://img.shields.io/github/stars/jacobyhsi/TabRep.svg?style=social&label=Star)](https://github.com/jacobyhsi/TabRep) | Generic |
+TabNAT | [**TabNAT: A Continuous-Discrete Joint Generative Framework for Tabular Data**](https://proceedings.mlr.press/v267/zhang25t.html) | ICML 2025 | [![Stars](https://img.shields.io/github/stars/fangliancheng/TabNAT.svg?style=social&label=Star)](https://github.com/fangliancheng/TabNAT) | Generic |
+TabuSDE | [**A Stochastic Diffusion Framework for Tabular Data Synthesis and Completion**](https://ieeexplore.ieee.org/abstract/document/11416067) | ICDM Workshop 2025 | [![Stars](https://img.shields.io/github/stars/fangliancheng/TabNAT.svg?style=social&label=Star)](https://github.com/fangliancheng/TabNAT) | Generic |
+
+### Flow Matching
+|  Abbr.  |   Title  |   Venue & Year |   Code   |   Domain   |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+TabbyFlow | [**Exponential Family Variational Flow Matching for Tabular Data Generation**](https://openreview.net/forum?id=kjtvCSkSsy) | ICML 2025 | [![Stars](https://img.shields.io/github/stars/andresguzco/ef-vfm.svg?style=social&label=Star)](https://github.com/andresguzco/ef-vfm) | Generic |
+TabSynFlow | [**Flow matching for tabular data synthesis**](https://proceedings.mlr.press/v267/zhang25t.html) | TMLR | [![Stars](https://img.shields.io/github/stars/rulnasution/tabular-flow-matching.svg?style=social&label=Star)](https://github.com/rulnasution/tabular-flow-matching) | Generic |
+TabFlowM | [**TabFlowM: Lightweight flow matching for Mixed-Type Tabular Data Synthesis in Latent Space**](https://openreview.net/forum?id=t5kygrpSIz) | Under review for TMLR | N/A | Generic |
+TabCascade | [**Cascaded Flow Matching for Heterogeneous Tabular Data with Mixed-Type Features**](https://arxiv.org/abs/2601.22816) | ICML 2026 | [![Stars](https://img.shields.io/github/stars/muellermarkus/tabcascade.svg?style=social&label=Star)](https://github.com/muellermarkus/tabcascade) | Generic |
+PatientFlow | [**PatientFlow: Learning to generate mixed-type longitudinal clinical data with flow matching**](https://www.sciencedirect.com/science/article/pii/S0933365726000448) | Artificial Intelligence in Medicine | [![Stars](https://img.shields.io/github/stars/RubenBranco/PatientFlow.svg?style=social&label=Star)](https://github.com/RubenBranco/PatientFlow/) | Healthcare |
 
 ## Multi-relational Data Synthesis
-
+### Diffusion
 Multi-relational data synthesis: generation of multiple tables while considering their intercorrelations and constraints
 
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
@@ -119,7 +144,7 @@ ClavaDDPM | [**ClavaDDPM: Multi-relational Data Synthesis with Cluster-guided Di
 GNN-TabSyn | [**Relational Data Generation with Graph Neural Networks and Latent Diffusion Models**](https://openreview.net/forum?id=MNLR2NYN2Z#discussion) | NeurIPS Workshop 2024 | [![Stars](https://img.shields.io/github/stars/ValterH/relational-graph-conditioned-diffusion.svg?style=social&label=Star)](https://github.com/ValterH/relational-graph-conditioned-diffusion) | Generic |
 
 # Data Imputation
-
+### Diffusion
 Data imputation involves generating plausible values to fill in missing entries in tabular data
 
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
@@ -133,9 +158,11 @@ NewImp | [**Rethinking the diffusion models for missing data imputation: A gradi
 DiffPuter | [**Unleashing the Potential of Diffusion Models for Incomplete Data Imputation**](https://arxiv.org/abs/2405.20690) | ICLR 2025 | [![Stars](https://img.shields.io/github/stars/hengruizhang98/DiffPuter.svg?style=social&label=Star)](https://github.com/hengruizhang98/DiffPuter) | Generic |
 TabSyn | [**Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space**](https://arxiv.org/abs/2310.09656) | ICLR 2024 | [![Stars](https://img.shields.io/github/stars/amazon-science/tabsyn.svg?style=social&label=Star)](https://github.com/amazon-science/tabsyn) | Generic |
 Forest-Diffusion | [**Generating and imputing tabular data via diffusion and flow-based gradient-boosted trees**](https://arxiv.org/abs/2309.09968) | AISTATS 2024 | [![Stars](https://img.shields.io/github/stars/SamsungSAILMontreal/ForestDiffusion.svg?style=social&label=Star)](https://github.com/SamsungSAILMontreal/ForestDiffusion) | Generic |
+TabNAT | [**TabNAT: A Continuous-Discrete Joint Generative Framework for Tabular Data**](https://proceedings.mlr.press/v267/zhang25t.html) | ICML 2025 | [![Stars](https://img.shields.io/github/stars/fangliancheng/TabNAT.svg?style=social&label=Star)](https://github.com/fangliancheng/TabNAT) | Generic |
+TabuSDE | [**A Stochastic Diffusion Framework for Tabular Data Synthesis and Completion**](https://ieeexplore.ieee.org/abstract/document/11416067) | ICDM Workshop 2025 | [![Stars](https://img.shields.io/github/stars/fangliancheng/TabNAT.svg?style=social&label=Star)](https://github.com/fangliancheng/TabNAT) | Generic |
 
 # Trustworthy Data Synthesis
-
+### Diffusion
 Trustworthy data synthesis aims to generate realistic surrogate values for sensitive entries while keeping the overall utility of the tabular data.
 
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
@@ -143,11 +170,22 @@ Trustworthy data synthesis aims to generate realistic surrogate values for sensi
 SiloFuse | [**SiloFuse: Cross-silo Synthetic Data Generation with Latent Tabular Diffusion Models**](https://arxiv.org/abs/2404.03299) | ICDE 2024 | N/A | Generic |
 FedTabDiff | [**FedTabDiff: Federated Learning of Diffusion Probabilistic Models for Synthetic Mixed-Type Tabular Data Generation**](https://arxiv.org/abs/2401.06263) | ArXiv 2024 | [![Stars](https://img.shields.io/github/stars/sattarov/fedtabdiff.svg?style=social&label=Star)](https://github.com/sattarov/fedtabdiff) | Generic |
 FairTabDDPM | [**Balanced Mixed-Type Tabular Data Synthesis with Diffusion Models**](https://arxiv.org/abs/2404.08254) | TMLR 02/2025 | [![Stars](https://img.shields.io/github/stars/comp-well-org/fair-tab-diffusion.svg?style=social&label=Star)](https://github.com/comp-well-org/fair-tab-diffusion) | Generic |
-DP-Fed-FinDiff | [**Differentially Private Federated Learning of Diffusion Models for Synthetic Tabular Data Generation**](https://arxiv.org/abs/2412.16083) | ArXiv 2024 | N/A | Finance |
+DP-Fed-FinDiff | [**Differentially Private Federated Learning of Diffusion Models for Synthetic Tabular Data Generation**](https://arxiv.org/abs/2412.16083) | ArXiv 2024 | N/A | Finance/Healthcare |
+
+# Memorization Mitigation
+
+### Diffusion
+
+|  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+TabCutMix/TabCutMixPlus | [**Understanding and mitigating memorization in diffusion models for tabular data**](https://proceedings.mlr.press/v267/fang25f.html) | ICML 2025 | [![Stars](https://img.shields.io/github/stars/fangzy96/TabCutMix.svg?style=social&label=Star)](https://github.com/fangzy96/TabCutMix) | Generic |
+DynamicCut | [**A closer look on memorization in tabular diffusion model: A data-centric perspective**](https://openreview.net/forum?id=p2n88DfaXB) | TMLR | [![Stars](https://img.shields.io/github/stars/fangzy96/DynamicCut.svg?style=social&label=Star)](https://github.com/fangzy96/DynamicCut) | Generic |
 
 # Anomaly Detection
 
 In anomaly detecion, diffusion models are used to learn the “normal” distribution of data from the known set and identify anomalies as deviations from this learned distribution in the unseen data.
+
+### Diffusion
 
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
@@ -157,6 +195,12 @@ SDAD | [**Self-supervised enhanced denoising diffusion for anomaly detection**](
 NSCBAD | [**Anomaly Detection by Estimating Gradients of the Tabular Data Distribution**](https://openreview.net/forum?id=7QDIFrtAsB) | OpenReview 2024 | [Supplementary Material](https://openreview.net/forum?id=7QDIFrtAsB) | Generic |
 FraudDiffuse | [**FraudDiffuse: Diffusion-aided Synthetic Fraud Augmentation for Improved Fraud Detection**](https://doi.org/10.1145/3677052.3698658) | ICAIF 2024 | N/A | Finance |
 FraudDDPM | [**Synthetic Data Generation for Fraud Detection Using Diffusion Models**](https://doi.org/10.11610/isij.5534) | ISIJ 2024 | N/A | Finance |
+DDAE | [**Diffusion-scheduled denoising autoencoders for anomaly detection in tabular data**](https://dl.acm.org/doi/10.1145/3711896.3736910) | KDD 2025 | [![Stars](https://img.shields.io/github/stars/sattarov/AnoDDAE.svg?style=social&label=Star)](https://github.com/sattarov/AnoDDAE)| Generic |
+
+### Flow Matching
+|  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+TCCM | [**Scalable, Explainable and Provably Robust Anomaly Detection with One-Step Flow Matching**](https://openreview.net/forum?id=jDYuadVajk) | NeurIPS 2025 | [![Stars](https://img.shields.io/github/stars/ZhongLIFR/TCCM-NIPS.svg?style=social&label=Star)](https://github.com/ZhongLIFR/TCCM-NIPS) | Generic |
 
 # (In Depth) Handling Discrete Data in Diffusion Models
 

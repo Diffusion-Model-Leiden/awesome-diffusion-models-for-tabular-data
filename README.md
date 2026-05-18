@@ -1,13 +1,13 @@
-# [Awesome Diffusion Models For Tabular Data](https://arxiv.org/)
+# [Awesome Diffusion and Flow Matching Models For Tabular Data](https://arxiv.org/)
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Visitors](https://api.visitorbadge.io/api/visitors?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data) ![Contribute](https://img.shields.io/badge/Contribute-Welcome-brightgreen)
 
-## Diffusion Models for Tabular Data
+## Diffusion  and Flow Matching Models for Tabular Data
 
 We explore recent advancements in **diffusion models for tabular data** and highlight key challenges, current progress, and future directions.
 
 📖 **You are welcome to read our paper and share your feedback!**  
-👉 [Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions (under review)](https://arxiv.org/abs/2502.17119)
+👉 [Diffusion and Flow Matching Models for Tabular Data: A Survey (under review)](https://arxiv.org/abs/2502.17119)
 
 ### ⭐ Support & Citation  
 If you find our survey and this repository helpful, please **star this project** and cite our paper:
@@ -26,7 +26,7 @@ If you find our survey and this repository helpful, please **star this project**
 ### 🤝 Suggest Papers
 Thank you for your interest in contributing to this list! 🎉 <br>
 We appreciate any efforts to recommend papers, please ensure that:
-- Their topics are closely related to **diffusion models for tabular data**.
+- Their topics are closely related to **diffusion and flow matching models for tabular data**.
 - The papers focus on methodology.
 - No **duplicate** entries exist.
 - The papers are **high-quality and well-written**.
@@ -38,13 +38,13 @@ We appreciate any efforts to recommend papers, please ensure that:
 ---
 # Table of Contents
 
-- [Awesome Diffusion Models For Tabular Data](#awesome-diffusion-models-for-tabular-data)
-  - [Diffusion Models for Tabular Data](#diffusion-models-for-tabular-data)
+- [Awesome Diffusion and Flow Matching Models For Tabular Data](#awesome-diffusion-and-flow-matching-models-for-tabular-data)
+  - [Diffusion  and Flow Matching Models for Tabular Data](#diffusion--and-flow-matching-models-for-tabular-data)
     - [⭐ Support \& Citation](#-support--citation)
     - [🤝 Suggest Papers](#-suggest-papers)
 - [Table of Contents](#table-of-contents)
 - [Timeline of GenAI for Tabular Data](#timeline-of-genai-for-tabular-data)
-- [Taxonomy of Diffusion Models for Tabular Data](#taxonomy-of-diffusion-models-for-tabular-data)
+- [Taxonomy of Diffusion and Flow Matching Models for Tabular Data](#taxonomy-of-diffusion-and-flow-matching-models-for-tabular-data)
 - [Data Augmentation](#data-augmentation)
   - [Single Table Synthesis](#single-table-synthesis)
     - [Diffusion](#diffusion)
@@ -69,7 +69,7 @@ We appreciate any efforts to recommend papers, please ensure that:
 <!-- ![Timeline](materials/TabGenAI2.svg) -->
 ![Timeline](materials/TabGenTimelineTree2026.png)
 
-# Taxonomy of Diffusion Models for Tabular Data
+# Taxonomy of Diffusion and Flow Matching Models for Tabular Data
 
 Research on generative models for tabular data is primarily motivated by real-world applications. Based on their usage, we classify existing studies into four main categories:
 
@@ -129,7 +129,7 @@ TabuSDE | [**A Stochastic Diffusion Framework for Tabular Data Synthesis and Com
 |  Abbr.  |   Title  |   Venue & Year |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 TabbyFlow | [**Exponential Family Variational Flow Matching for Tabular Data Generation**](https://openreview.net/forum?id=kjtvCSkSsy) | ICML 2025 | [![Stars](https://img.shields.io/github/stars/andresguzco/ef-vfm.svg?style=social&label=Star)](https://github.com/andresguzco/ef-vfm) | Generic |
-TabSynFlow | [**Flow matching for tabular data synthesis**](https://proceedings.mlr.press/v267/zhang25t.html) | TMLR | [![Stars](https://img.shields.io/github/stars/rulnasution/tabular-flow-matching.svg?style=social&label=Star)](https://github.com/rulnasution/tabular-flow-matching) | Generic |
+TabSynFlow | [**Flow matching for tabular data synthesis**](https://openreview.net/forum?id=RdOjoAa66L) | TMLR 2026 | [![Stars](https://img.shields.io/github/stars/rulnasution/tabular-flow-matching.svg?style=social&label=Star)](https://github.com/rulnasution/tabular-flow-matching) | Generic |
 TabFlowM | [**TabFlowM: Lightweight flow matching for Mixed-Type Tabular Data Synthesis in Latent Space**](https://openreview.net/forum?id=t5kygrpSIz) | Under review for TMLR | N/A | Generic |
 TabCascade | [**Cascaded Flow Matching for Heterogeneous Tabular Data with Mixed-Type Features**](https://arxiv.org/abs/2601.22816) | ICML 2026 | [![Stars](https://img.shields.io/github/stars/muellermarkus/tabcascade.svg?style=social&label=Star)](https://github.com/muellermarkus/tabcascade) | Generic |
 PatientFlow | [**PatientFlow: Learning to generate mixed-type longitudinal clinical data with flow matching**](https://www.sciencedirect.com/science/article/pii/S0933365726000448) | Artificial Intelligence in Medicine | [![Stars](https://img.shields.io/github/stars/RubenBranco/PatientFlow.svg?style=social&label=Star)](https://github.com/RubenBranco/PatientFlow/) | Healthcare |
@@ -179,7 +179,7 @@ DP-Fed-FinDiff | [**Differentially Private Federated Learning of Diffusion Model
 |  Abbr.  |   Title  |   Venue & Year  |   Code   |   Domain   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
 TabCutMix/TabCutMixPlus | [**Understanding and mitigating memorization in diffusion models for tabular data**](https://proceedings.mlr.press/v267/fang25f.html) | ICML 2025 | [![Stars](https://img.shields.io/github/stars/fangzy96/TabCutMix.svg?style=social&label=Star)](https://github.com/fangzy96/TabCutMix) | Generic |
-DynamicCut | [**A closer look on memorization in tabular diffusion model: A data-centric perspective**](https://openreview.net/forum?id=p2n88DfaXB) | TMLR | [![Stars](https://img.shields.io/github/stars/fangzy96/DynamicCut.svg?style=social&label=Star)](https://github.com/fangzy96/DynamicCut) | Generic |
+DynamicCut | [**A closer look on memorization in tabular diffusion model: A data-centric perspective**](https://openreview.net/forum?id=p2n88DfaXB) | TMLR 2026 | [![Stars](https://img.shields.io/github/stars/fangzy96/DynamicCut.svg?style=social&label=Star)](https://github.com/fangzy96/DynamicCut) | Generic |
 
 # Anomaly Detection
 
@@ -214,6 +214,9 @@ Though discussed in our survey paper, we would like to forward the interesting r
 Kuleshov Group of Cornell University:
 - [Awesome Discrete Diffusion Models](https://github.com/kuleshov-group/awesome-discrete-diffusion-models)
 
+We also recommend MIT’s elegant, publicly available course for readers new to the topic:
+- [An Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/2026/index.html)
+  
 # Collection of Datasets
 
 Various datasets have been used to evaluate the performance of diffusion models for tabular data.

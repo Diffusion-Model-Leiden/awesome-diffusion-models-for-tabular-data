@@ -13,11 +13,11 @@ We explore recent advancements in **diffusion models for tabular data** and high
 If you find our survey and this repository helpful, please **star this project** and cite our paper:
 
 ```bibtex
-@misc{liDiffusion2025,
-  title = {Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions},
-  author = {Zhong Li, Qi Huang*, Lincen Yang*, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen},
-  year = {2025},
-  month = {February},
+@misc{liDiffusion2026,
+  title = {Diffusion and Flow Matching Models for Tabular Data: A Survey},
+  author = {Zhong Li, Qi Huang, Lincen Yang, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen},
+  year = {2026},
+  month = {May},
   primaryclass = {cs},
   doi = {}
 }

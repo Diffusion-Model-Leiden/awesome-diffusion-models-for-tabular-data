@@ -1,4 +1,4 @@
-# [Awesome Diffusion and Flow Matching Models For Tabular Data](https://arxiv.org/)
+# [Awesome Diffusion and Flow Matching Models For Tabular Data](https://arxiv.org/abs/2502.17119)
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Visitors](https://api.visitorbadge.io/api/visitors?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=Diffusion-Model-Leiden%2Fawesome-diffusion-models-for-tabular-data) ![Contribute](https://img.shields.io/badge/Contribute-Welcome-brightgreen)
 
@@ -18,8 +18,10 @@ If you find our survey and this repository helpful, please **star this project**
   author = {Zhong Li, Qi Huang, Lincen Yang, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen},
   year = {2026},
   month = {May},
-  primaryclass = {cs},
-  doi = {}
+  eprint={2502.17119},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2502.17119}, 
 }
 ```
 
@@ -39,7 +41,7 @@ We appreciate any efforts to recommend papers, please ensure that:
 # Table of Contents
 
 - [Awesome Diffusion and Flow Matching Models For Tabular Data](#awesome-diffusion-and-flow-matching-models-for-tabular-data)
-  - [Diffusion  and Flow Matching Models for Tabular Data](#diffusion--and-flow-matching-models-for-tabular-data)
+  - [Diffusion and Flow Matching Models for Tabular Data](#diffusion-and-flow-matching-models-for-tabular-data)
     - [⭐ Support \& Citation](#-support--citation)
     - [🤝 Suggest Papers](#-suggest-papers)
 - [Table of Contents](#table-of-contents)
